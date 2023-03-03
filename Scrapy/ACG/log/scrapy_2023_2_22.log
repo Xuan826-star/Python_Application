@@ -1,0 +1,61 @@
+2023-02-22 21:04:03 [scrapy.utils.log] INFO: Scrapy 2.7.1 started (bot: ACG)
+2023-02-22 21:04:03 [scrapy.utils.log] INFO: Versions: lxml 4.9.2.0, libxml2 2.9.12, cssselect 1.2.0, parsel 1.7.0, w3lib 2.1.1, Twisted 22.10.0, Python 3.9.6 (tags/v3.9.6:db3ff76, Jun 28 2021, 15:26:21) [MSC v.1929 64 bit (AMD64)], pyOpenSSL 22.0.0 (OpenSSL 1.1.1n  15 Mar 2022), cryptography 36.0.2, Platform Windows-10-10.0.22621-SP0
+2023-02-22 21:04:03 [scrapy.utils.spider] ERROR: More than one spider can handle: <GET https://www.pixiv.net/artworks/105572113> - pixivauthorid, pixivrank, pixivworkid
+2023-02-22 21:04:03 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'ACG',
+ 'DUPEFILTER_CLASS': 'scrapy.dupefilters.BaseDupeFilter',
+ 'LOGSTATS_INTERVAL': 0,
+ 'LOG_FILE': 'log/scrapy_2023_2_22.log',
+ 'NEWSPIDER_MODULE': 'ACG.spiders',
+ 'REQUEST_FINGERPRINTER_IMPLEMENTATION': '2.7',
+ 'SPIDER_MODULES': ['ACG.spiders'],
+ 'TWISTED_REACTOR': 'twisted.internet.asyncioreactor.AsyncioSelectorReactor'}
+2023-02-22 21:04:03 [asyncio] DEBUG: Using selector: SelectSelector
+2023-02-22 21:04:03 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+2023-02-22 21:04:03 [scrapy.utils.log] DEBUG: Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
+2023-02-22 21:04:03 [scrapy.extensions.telnet] INFO: Telnet Password: ae2126a363ecb99c
+2023-02-22 21:04:03 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole']
+2023-02-22 21:04:04 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2023-02-22 21:04:04 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2023-02-22 21:04:04 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2023-02-22 21:04:04 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2023-02-22 21:04:04 [scrapy.core.engine] INFO: Spider opened
+2023-02-22 21:04:05 [filelock] DEBUG: Attempting to acquire lock 1918564229952 on D:\Python\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2023-02-22 21:04:05 [filelock] DEBUG: Lock 1918564229952 acquired on D:\Python\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2023-02-22 21:04:05 [filelock] DEBUG: Attempting to release lock 1918564229952 on D:\Python\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2023-02-22 21:04:05 [filelock] DEBUG: Lock 1918564229952 released on D:\Python\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2023-02-22 21:04:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.pixiv.net/artworks/105572113> (referer: None)
+2023-02-22 21:04:05 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.pixiv.net/artworks/105572113> (referer: None)
+Traceback (most recent call last):
+  File "D:\Python\lib\site-packages\twisted\internet\defer.py", line 892, in _runCallbacks
+    current.result = callback(  # type: ignore[misc]
+  File "D:\Python\lib\site-packages\scrapy\utils\defer.py", line 285, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "D:\Python\lib\site-packages\scrapy\utils\defer.py", line 272, in deferred_from_coro
+    event_loop = get_asyncio_event_loop_policy().get_event_loop()
+  File "D:\Python\lib\asyncio\events.py", line 642, in get_event_loop
+    raise RuntimeError('There is no current event loop in thread %r.'
+RuntimeError: There is no current event loop in thread 'Thread-1'.
+2023-02-22 21:04:05 [py.warnings] WARNING: D:\Python\lib\site-packages\twisted\internet\defer.py:892: RuntimeWarning: coroutine 'SpiderMiddlewareManager.scrape_response.<locals>.process_callback_output' was never awaited
+  current.result = callback(  # type: ignore[misc]
+
+2023-02-22 21:04:05 [asyncio] DEBUG: Using selector: SelectSelector

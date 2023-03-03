@@ -1,0 +1,765 @@
+2023-02-24 21:25:32 [scrapy.utils.log] INFO: Scrapy 2.7.1 started (bot: ACG)
+2023-02-24 21:25:32 [scrapy.utils.log] INFO: Versions: lxml 4.9.2.0, libxml2 2.9.12, cssselect 1.2.0, parsel 1.7.0, w3lib 2.1.1, Twisted 22.10.0, Python 3.9.6 (tags/v3.9.6:db3ff76, Jun 28 2021, 15:26:21) [MSC v.1929 64 bit (AMD64)], pyOpenSSL 22.0.0 (OpenSSL 1.1.1n  15 Mar 2022), cryptography 36.0.2, Platform Windows-10-10.0.22621-SP0
+2023-02-24 22:51:20 [scrapy.utils.log] INFO: Scrapy 2.7.1 started (bot: ACG)
+2023-02-24 22:51:20 [scrapy.utils.log] INFO: Versions: lxml 4.9.2.0, libxml2 2.9.12, cssselect 1.2.0, parsel 1.7.0, w3lib 2.1.1, Twisted 22.10.0, Python 3.9.6 (tags/v3.9.6:db3ff76, Jun 28 2021, 15:26:21) [MSC v.1929 64 bit (AMD64)], pyOpenSSL 22.0.0 (OpenSSL 1.1.1n  15 Mar 2022), cryptography 36.0.2, Platform Windows-10-10.0.22621-SP0
+2023-02-24 22:51:20 [scrapy.utils.spider] ERROR: More than one spider can handle: <GET https://www.pixiv.net/ajax/search/illustrations/%E5%8E%9F%E7%A5%9E%20%E9%9B%B7%E7%94%B5%E5%B0%86%E5%86%9B?word=%E5%8E%9F%E7%A5%9E%20%E9%9B%B7%E7%94%B5%E5%B0%86%E5%86%9B&order=date_d&mode=all&p=1&s_mode=s_tag_full&type=illust_and_ugoira&lang=zh&version=756be60366a5fe018a9a6dad3939c8a57e00ec57> - pixivauthorid, pixivrank, pixivsearch, pixivworkid
+2023-02-24 22:51:20 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'ACG',
+ 'DUPEFILTER_CLASS': 'scrapy.dupefilters.BaseDupeFilter',
+ 'LOGSTATS_INTERVAL': 0,
+ 'LOG_FILE': 'log/scrapy_2023_2_24.log',
+ 'NEWSPIDER_MODULE': 'ACG.spiders',
+ 'REQUEST_FINGERPRINTER_IMPLEMENTATION': '2.7',
+ 'SPIDER_MODULES': ['ACG.spiders'],
+ 'TWISTED_REACTOR': 'twisted.internet.asyncioreactor.AsyncioSelectorReactor'}
+2023-02-24 22:51:20 [asyncio] DEBUG: Using selector: SelectSelector
+2023-02-24 22:51:20 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+2023-02-24 22:51:20 [scrapy.utils.log] DEBUG: Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
+2023-02-24 22:51:20 [scrapy.extensions.telnet] INFO: Telnet Password: 1789eaead17f0354
+2023-02-24 22:51:20 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole']
+2023-02-24 22:51:21 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2023-02-24 22:51:21 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2023-02-24 22:51:21 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2023-02-24 22:51:21 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2023-02-24 22:51:21 [scrapy.core.engine] INFO: Spider opened
+2023-02-24 22:51:23 [filelock] DEBUG: Attempting to acquire lock 2019905186496 on D:\Python\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2023-02-24 22:51:23 [filelock] DEBUG: Lock 2019905186496 acquired on D:\Python\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2023-02-24 22:51:23 [filelock] DEBUG: Attempting to release lock 2019905186496 on D:\Python\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2023-02-24 22:51:23 [filelock] DEBUG: Lock 2019905186496 released on D:\Python\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2023-02-24 22:51:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.pixiv.net/ajax/search/illustrations/%E5%8E%9F%E7%A5%9E%20%E9%9B%B7%E7%94%B5%E5%B0%86%E5%86%9B?word=%E5%8E%9F%E7%A5%9E%20%E9%9B%B7%E7%94%B5%E5%B0%86%E5%86%9B&order=date_d&mode=all&p=1&s_mode=s_tag_full&type=illust_and_ugoira&lang=zh&version=756be60366a5fe018a9a6dad3939c8a57e00ec57> (referer: None)
+2023-02-24 22:51:23 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.pixiv.net/ajax/search/illustrations/%E5%8E%9F%E7%A5%9E%20%E9%9B%B7%E7%94%B5%E5%B0%86%E5%86%9B?word=%E5%8E%9F%E7%A5%9E%20%E9%9B%B7%E7%94%B5%E5%B0%86%E5%86%9B&order=date_d&mode=all&p=1&s_mode=s_tag_full&type=illust_and_ugoira&lang=zh&version=756be60366a5fe018a9a6dad3939c8a57e00ec57> (referer: None)
+Traceback (most recent call last):
+  File "D:\Python\lib\site-packages\twisted\internet\defer.py", line 892, in _runCallbacks
+    current.result = callback(  # type: ignore[misc]
+  File "D:\Python\lib\site-packages\scrapy\utils\defer.py", line 285, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "D:\Python\lib\site-packages\scrapy\utils\defer.py", line 272, in deferred_from_coro
+    event_loop = get_asyncio_event_loop_policy().get_event_loop()
+  File "D:\Python\lib\asyncio\events.py", line 642, in get_event_loop
+    raise RuntimeError('There is no current event loop in thread %r.'
+RuntimeError: There is no current event loop in thread 'Thread-1'.
+2023-02-24 22:51:23 [py.warnings] WARNING: D:\Python\lib\site-packages\twisted\internet\defer.py:892: RuntimeWarning: coroutine 'SpiderMiddlewareManager.scrape_response.<locals>.process_callback_output' was never awaited
+  current.result = callback(  # type: ignore[misc]
+
+2023-02-24 22:51:23 [asyncio] DEBUG: Using selector: SelectSelector
+2023-02-24 23:04:25 [scrapy.utils.log] INFO: Scrapy 2.7.1 started (bot: ACG)
+2023-02-24 23:04:25 [scrapy.utils.log] INFO: Versions: lxml 4.9.2.0, libxml2 2.9.12, cssselect 1.2.0, parsel 1.7.0, w3lib 2.1.1, Twisted 22.10.0, Python 3.9.6 (tags/v3.9.6:db3ff76, Jun 28 2021, 15:26:21) [MSC v.1929 64 bit (AMD64)], pyOpenSSL 22.0.0 (OpenSSL 1.1.1n  15 Mar 2022), cryptography 36.0.2, Platform Windows-10-10.0.22621-SP0
+2023-02-24 23:04:25 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'ACG',
+ 'LOG_FILE': 'log/scrapy_2023_2_24.log',
+ 'NEWSPIDER_MODULE': 'ACG.spiders',
+ 'REQUEST_FINGERPRINTER_IMPLEMENTATION': '2.7',
+ 'SPIDER_MODULES': ['ACG.spiders'],
+ 'TWISTED_REACTOR': 'twisted.internet.asyncioreactor.AsyncioSelectorReactor'}
+2023-02-24 23:04:25 [asyncio] DEBUG: Using selector: SelectSelector
+2023-02-24 23:04:25 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+2023-02-24 23:04:25 [scrapy.utils.log] DEBUG: Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
+2023-02-24 23:04:25 [scrapy.extensions.telnet] INFO: Telnet Password: 4787c2cced16174c
+2023-02-24 23:04:25 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2023-02-24 23:04:26 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2023-02-24 23:04:26 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2023-02-24 23:04:26 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2023-02-24 23:04:26 [scrapy.core.engine] INFO: Spider opened
+2023-02-24 23:04:26 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2023-02-24 23:04:26 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2023-02-24 23:04:26 [scrapy.core.engine] ERROR: Error while obtaining start requests
+Traceback (most recent call last):
+  File "D:\Python\lib\site-packages\scrapy\core\engine.py", line 152, in _next_request
+    request = next(self.slot.start_requests)
+  File "E:\Github_Local\Ideas\Scrapy\ACG\ACG\spiders\pixivsearch.py", line 16, in start_requests
+    tp_dir='illustrations' if self.tp=='illust_and_ugoira' else 'manga'
+AttributeError: 'PixivsearchSpider' object has no attribute 'tp'
+2023-02-24 23:04:26 [scrapy.core.engine] INFO: Closing spider (finished)
+2023-02-24 23:04:26 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'elapsed_time_seconds': 0.002003,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2023, 2, 24, 15, 4, 26, 424853),
+ 'log_count/DEBUG': 3,
+ 'log_count/ERROR': 1,
+ 'log_count/INFO': 10,
+ 'start_time': datetime.datetime(2023, 2, 24, 15, 4, 26, 422850)}
+2023-02-24 23:04:26 [scrapy.core.engine] INFO: Spider closed (finished)
+2023-02-24 23:05:05 [scrapy.utils.log] INFO: Scrapy 2.7.1 started (bot: ACG)
+2023-02-24 23:05:05 [scrapy.utils.log] INFO: Versions: lxml 4.9.2.0, libxml2 2.9.12, cssselect 1.2.0, parsel 1.7.0, w3lib 2.1.1, Twisted 22.10.0, Python 3.9.6 (tags/v3.9.6:db3ff76, Jun 28 2021, 15:26:21) [MSC v.1929 64 bit (AMD64)], pyOpenSSL 22.0.0 (OpenSSL 1.1.1n  15 Mar 2022), cryptography 36.0.2, Platform Windows-10-10.0.22621-SP0
+2023-02-24 23:05:05 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'ACG',
+ 'LOG_FILE': 'log/scrapy_2023_2_24.log',
+ 'NEWSPIDER_MODULE': 'ACG.spiders',
+ 'REQUEST_FINGERPRINTER_IMPLEMENTATION': '2.7',
+ 'SPIDER_MODULES': ['ACG.spiders'],
+ 'TWISTED_REACTOR': 'twisted.internet.asyncioreactor.AsyncioSelectorReactor'}
+2023-02-24 23:05:05 [asyncio] DEBUG: Using selector: SelectSelector
+2023-02-24 23:05:05 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+2023-02-24 23:05:05 [scrapy.utils.log] DEBUG: Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
+2023-02-24 23:05:05 [scrapy.extensions.telnet] INFO: Telnet Password: 6b456116841e1e9f
+2023-02-24 23:05:05 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2023-02-24 23:05:06 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2023-02-24 23:05:06 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2023-02-24 23:05:06 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2023-02-24 23:05:06 [scrapy.core.engine] INFO: Spider opened
+2023-02-24 23:05:06 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2023-02-24 23:05:06 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2023-02-24 23:05:06 [scrapy.core.engine] ERROR: Error while obtaining start requests
+Traceback (most recent call last):
+  File "D:\Python\lib\site-packages\scrapy\core\engine.py", line 152, in _next_request
+    request = next(self.slot.start_requests)
+  File "E:\Github_Local\Ideas\Scrapy\ACG\ACG\spiders\pixivsearch.py", line 16, in start_requests
+    tp_dir='illustrations' if self.tp=='illust_and_ugoira' else 'manga'
+AttributeError: 'PixivsearchSpider' object has no attribute 'tp'
+2023-02-24 23:05:06 [scrapy.core.engine] INFO: Closing spider (finished)
+2023-02-24 23:05:06 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'elapsed_time_seconds': 0.002001,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2023, 2, 24, 15, 5, 6, 391920),
+ 'log_count/DEBUG': 3,
+ 'log_count/ERROR': 1,
+ 'log_count/INFO': 10,
+ 'start_time': datetime.datetime(2023, 2, 24, 15, 5, 6, 389919)}
+2023-02-24 23:05:06 [scrapy.core.engine] INFO: Spider closed (finished)
+2023-02-24 23:05:22 [scrapy.utils.log] INFO: Scrapy 2.7.1 started (bot: ACG)
+2023-02-24 23:05:22 [scrapy.utils.log] INFO: Versions: lxml 4.9.2.0, libxml2 2.9.12, cssselect 1.2.0, parsel 1.7.0, w3lib 2.1.1, Twisted 22.10.0, Python 3.9.6 (tags/v3.9.6:db3ff76, Jun 28 2021, 15:26:21) [MSC v.1929 64 bit (AMD64)], pyOpenSSL 22.0.0 (OpenSSL 1.1.1n  15 Mar 2022), cryptography 36.0.2, Platform Windows-10-10.0.22621-SP0
+2023-02-24 23:05:22 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'ACG',
+ 'LOG_FILE': 'log/scrapy_2023_2_24.log',
+ 'NEWSPIDER_MODULE': 'ACG.spiders',
+ 'REQUEST_FINGERPRINTER_IMPLEMENTATION': '2.7',
+ 'SPIDER_MODULES': ['ACG.spiders'],
+ 'TWISTED_REACTOR': 'twisted.internet.asyncioreactor.AsyncioSelectorReactor'}
+2023-02-24 23:05:22 [asyncio] DEBUG: Using selector: SelectSelector
+2023-02-24 23:05:22 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+2023-02-24 23:05:22 [scrapy.utils.log] DEBUG: Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
+2023-02-24 23:05:22 [scrapy.extensions.telnet] INFO: Telnet Password: 9ef175a0c79165f7
+2023-02-24 23:05:22 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2023-02-24 23:05:23 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2023-02-24 23:05:23 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2023-02-24 23:05:23 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2023-02-24 23:05:23 [scrapy.core.engine] INFO: Spider opened
+2023-02-24 23:05:23 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2023-02-24 23:05:23 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2023-02-24 23:05:24 [filelock] DEBUG: Attempting to acquire lock 1876070482368 on D:\Python\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2023-02-24 23:05:24 [filelock] DEBUG: Lock 1876070482368 acquired on D:\Python\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2023-02-24 23:05:24 [filelock] DEBUG: Attempting to release lock 1876070482368 on D:\Python\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2023-02-24 23:05:24 [filelock] DEBUG: Lock 1876070482368 released on D:\Python\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2023-02-24 23:05:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.pixiv.net/ajax/search/illustrations/%5B%20%E5%8E%9F%20%E7%A5%9E%20%2C%20%E9%9B%B7%20%E7%94%B5%20%E5%B0%86%20%E5%86%9B%20%5D?word=%5B%20%E5%8E%9F%20%E7%A5%9E%20%2C%20%E9%9B%B7%20%E7%94%B5%20%E5%B0%86%20%E5%86%9B%20%5D&order=date_d&mode=all&p=1&s_mode=s_tag_full&type=illust_and_ugoira&lang=zh&version=756be60366a5fe018a9a6dad3939c8a57e00ec57> (referer: None)
+2023-02-24 23:05:24 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.pixiv.net/ajax/search/illustrations/%5B%20%E5%8E%9F%20%E7%A5%9E%20%2C%20%E9%9B%B7%20%E7%94%B5%20%E5%B0%86%20%E5%86%9B%20%5D?word=%5B%20%E5%8E%9F%20%E7%A5%9E%20%2C%20%E9%9B%B7%20%E7%94%B5%20%E5%B0%86%20%E5%86%9B%20%5D&order=date_d&mode=all&p=1&s_mode=s_tag_full&type=illust_and_ugoira&lang=zh&version=756be60366a5fe018a9a6dad3939c8a57e00ec57> (referer: None)
+Traceback (most recent call last):
+  File "D:\Python\lib\site-packages\scrapy\utils\defer.py", line 240, in iter_errback
+    yield next(it)
+  File "D:\Python\lib\site-packages\scrapy\utils\python.py", line 338, in __next__
+    return next(self.data)
+  File "D:\Python\lib\site-packages\scrapy\utils\python.py", line 338, in __next__
+    return next(self.data)
+  File "D:\Python\lib\site-packages\scrapy\core\spidermw.py", line 79, in process_sync
+    for r in iterable:
+  File "D:\Python\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in <genexpr>
+    return (r for r in result or () if self._filter(r, spider))
+  File "D:\Python\lib\site-packages\scrapy\core\spidermw.py", line 79, in process_sync
+    for r in iterable:
+  File "D:\Python\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 336, in <genexpr>
+    return (self._set_referer(r, response) for r in result or ())
+  File "D:\Python\lib\site-packages\scrapy\core\spidermw.py", line 79, in process_sync
+    for r in iterable:
+  File "D:\Python\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 28, in <genexpr>
+    return (r for r in result or () if self._filter(r, spider))
+  File "D:\Python\lib\site-packages\scrapy\core\spidermw.py", line 79, in process_sync
+    for r in iterable:
+  File "D:\Python\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 32, in <genexpr>
+    return (r for r in result or () if self._filter(r, response, spider))
+  File "D:\Python\lib\site-packages\scrapy\core\spidermw.py", line 79, in process_sync
+    for r in iterable:
+  File "E:\Github_Local\Ideas\Scrapy\ACG\ACG\spiders\pixivsearch.py", line 24, in parse
+    numberofPages=totalNumber//lenPerPage
+ZeroDivisionError: integer division or modulo by zero
+2023-02-24 23:05:24 [scrapy.core.engine] INFO: Closing spider (finished)
+2023-02-24 23:05:24 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 678,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 2176,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'elapsed_time_seconds': 1.391837,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2023, 2, 24, 15, 5, 24, 620136),
+ 'httpcompression/response_bytes': 2406,
+ 'httpcompression/response_count': 1,
+ 'log_count/DEBUG': 8,
+ 'log_count/ERROR': 1,
+ 'log_count/INFO': 10,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'spider_exceptions/ZeroDivisionError': 1,
+ 'start_time': datetime.datetime(2023, 2, 24, 15, 5, 23, 228299)}
+2023-02-24 23:05:24 [scrapy.core.engine] INFO: Spider closed (finished)
+2023-02-24 23:06:31 [scrapy.utils.log] INFO: Scrapy 2.7.1 started (bot: ACG)
+2023-02-24 23:06:31 [scrapy.utils.log] INFO: Versions: lxml 4.9.2.0, libxml2 2.9.12, cssselect 1.2.0, parsel 1.7.0, w3lib 2.1.1, Twisted 22.10.0, Python 3.9.6 (tags/v3.9.6:db3ff76, Jun 28 2021, 15:26:21) [MSC v.1929 64 bit (AMD64)], pyOpenSSL 22.0.0 (OpenSSL 1.1.1n  15 Mar 2022), cryptography 36.0.2, Platform Windows-10-10.0.22621-SP0
+2023-02-24 23:06:31 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'ACG',
+ 'LOG_FILE': 'log/scrapy_2023_2_24.log',
+ 'NEWSPIDER_MODULE': 'ACG.spiders',
+ 'REQUEST_FINGERPRINTER_IMPLEMENTATION': '2.7',
+ 'SPIDER_MODULES': ['ACG.spiders'],
+ 'TWISTED_REACTOR': 'twisted.internet.asyncioreactor.AsyncioSelectorReactor'}
+2023-02-24 23:06:31 [asyncio] DEBUG: Using selector: SelectSelector
+2023-02-24 23:06:31 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+2023-02-24 23:06:31 [scrapy.utils.log] DEBUG: Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
+2023-02-24 23:06:31 [scrapy.extensions.telnet] INFO: Telnet Password: 75c7b0b9c9a9a24c
+2023-02-24 23:06:32 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2023-02-24 23:06:32 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2023-02-24 23:06:32 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2023-02-24 23:06:32 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2023-02-24 23:06:32 [scrapy.core.engine] INFO: Spider opened
+2023-02-24 23:06:32 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2023-02-24 23:06:32 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2023-02-24 23:06:33 [filelock] DEBUG: Attempting to acquire lock 2371324094640 on D:\Python\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2023-02-24 23:06:33 [filelock] DEBUG: Lock 2371324094640 acquired on D:\Python\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2023-02-24 23:06:33 [filelock] DEBUG: Attempting to release lock 2371324094640 on D:\Python\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2023-02-24 23:06:33 [filelock] DEBUG: Lock 2371324094640 released on D:\Python\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2023-02-24 23:06:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.pixiv.net/ajax/search/illustrations/%5B%20%E5%8E%9F%20%E7%A5%9E%20%2C%20%E9%9B%B7%20%E7%94%B5%20%E5%B0%86%20%E5%86%9B%20%5D?word=%5B%20%E5%8E%9F%20%E7%A5%9E%20%2C%20%E9%9B%B7%20%E7%94%B5%20%E5%B0%86%20%E5%86%9B%20%5D&order=date_d&mode=all&p=1&s_mode=s_tag_full&type=illust_and_ugoira&lang=zh&version=756be60366a5fe018a9a6dad3939c8a57e00ec57> (referer: None)
+2023-02-24 23:06:33 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.pixiv.net/ajax/search/illustrations/%5B%20%E5%8E%9F%20%E7%A5%9E%20%2C%20%E9%9B%B7%20%E7%94%B5%20%E5%B0%86%20%E5%86%9B%20%5D?word=%5B%20%E5%8E%9F%20%E7%A5%9E%20%2C%20%E9%9B%B7%20%E7%94%B5%20%E5%B0%86%20%E5%86%9B%20%5D&order=date_d&mode=all&p=1&s_mode=s_tag_full&type=illust_and_ugoira&lang=zh&version=756be60366a5fe018a9a6dad3939c8a57e00ec57> (referer: None)
+Traceback (most recent call last):
+  File "D:\Python\lib\site-packages\scrapy\utils\defer.py", line 240, in iter_errback
+    yield next(it)
+  File "D:\Python\lib\site-packages\scrapy\utils\python.py", line 338, in __next__
+    return next(self.data)
+  File "D:\Python\lib\site-packages\scrapy\utils\python.py", line 338, in __next__
+    return next(self.data)
+  File "D:\Python\lib\site-packages\scrapy\core\spidermw.py", line 79, in process_sync
+    for r in iterable:
+  File "D:\Python\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in <genexpr>
+    return (r for r in result or () if self._filter(r, spider))
+  File "D:\Python\lib\site-packages\scrapy\core\spidermw.py", line 79, in process_sync
+    for r in iterable:
+  File "D:\Python\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 336, in <genexpr>
+    return (self._set_referer(r, response) for r in result or ())
+  File "D:\Python\lib\site-packages\scrapy\core\spidermw.py", line 79, in process_sync
+    for r in iterable:
+  File "D:\Python\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 28, in <genexpr>
+    return (r for r in result or () if self._filter(r, spider))
+  File "D:\Python\lib\site-packages\scrapy\core\spidermw.py", line 79, in process_sync
+    for r in iterable:
+  File "D:\Python\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 32, in <genexpr>
+    return (r for r in result or () if self._filter(r, response, spider))
+  File "D:\Python\lib\site-packages\scrapy\core\spidermw.py", line 79, in process_sync
+    for r in iterable:
+  File "E:\Github_Local\Ideas\Scrapy\ACG\ACG\spiders\pixivsearch.py", line 25, in parse
+    numberofPages=totalNumber//lenPerPage
+ZeroDivisionError: integer division or modulo by zero
+2023-02-24 23:06:33 [scrapy.core.engine] INFO: Closing spider (finished)
+2023-02-24 23:06:33 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 678,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 2173,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'elapsed_time_seconds': 1.05644,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2023, 2, 24, 15, 6, 33, 476172),
+ 'httpcompression/response_bytes': 2406,
+ 'httpcompression/response_count': 1,
+ 'log_count/DEBUG': 8,
+ 'log_count/ERROR': 1,
+ 'log_count/INFO': 10,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'spider_exceptions/ZeroDivisionError': 1,
+ 'start_time': datetime.datetime(2023, 2, 24, 15, 6, 32, 419732)}
+2023-02-24 23:06:33 [scrapy.core.engine] INFO: Spider closed (finished)
+2023-02-24 23:06:53 [scrapy.utils.log] INFO: Scrapy 2.7.1 started (bot: ACG)
+2023-02-24 23:06:53 [scrapy.utils.log] INFO: Versions: lxml 4.9.2.0, libxml2 2.9.12, cssselect 1.2.0, parsel 1.7.0, w3lib 2.1.1, Twisted 22.10.0, Python 3.9.6 (tags/v3.9.6:db3ff76, Jun 28 2021, 15:26:21) [MSC v.1929 64 bit (AMD64)], pyOpenSSL 22.0.0 (OpenSSL 1.1.1n  15 Mar 2022), cryptography 36.0.2, Platform Windows-10-10.0.22621-SP0
+2023-02-24 23:06:53 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'ACG',
+ 'LOG_FILE': 'log/scrapy_2023_2_24.log',
+ 'NEWSPIDER_MODULE': 'ACG.spiders',
+ 'REQUEST_FINGERPRINTER_IMPLEMENTATION': '2.7',
+ 'SPIDER_MODULES': ['ACG.spiders'],
+ 'TWISTED_REACTOR': 'twisted.internet.asyncioreactor.AsyncioSelectorReactor'}
+2023-02-24 23:06:53 [asyncio] DEBUG: Using selector: SelectSelector
+2023-02-24 23:06:53 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+2023-02-24 23:06:53 [scrapy.utils.log] DEBUG: Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
+2023-02-24 23:06:53 [scrapy.extensions.telnet] INFO: Telnet Password: 5e302fbe37911064
+2023-02-24 23:06:53 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2023-02-24 23:06:53 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2023-02-24 23:06:53 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2023-02-24 23:06:53 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2023-02-24 23:06:53 [scrapy.core.engine] INFO: Spider opened
+2023-02-24 23:06:53 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2023-02-24 23:06:53 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2023-02-24 23:06:54 [filelock] DEBUG: Attempting to acquire lock 1577578033456 on D:\Python\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2023-02-24 23:06:54 [filelock] DEBUG: Lock 1577578033456 acquired on D:\Python\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2023-02-24 23:06:54 [filelock] DEBUG: Attempting to release lock 1577578033456 on D:\Python\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2023-02-24 23:06:54 [filelock] DEBUG: Lock 1577578033456 released on D:\Python\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2023-02-24 23:06:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.pixiv.net/ajax/search/illustrations/%5B%20%E5%8E%9F%20%E7%A5%9E%20%2C%20%E9%9B%B7%20%E7%94%B5%20%E5%B0%86%20%E5%86%9B%20%5D?word=%5B%20%E5%8E%9F%20%E7%A5%9E%20%2C%20%E9%9B%B7%20%E7%94%B5%20%E5%B0%86%20%E5%86%9B%20%5D&order=date_d&mode=all&p=1&s_mode=s_tag_full&type=illust_and_ugoira&lang=zh&version=756be60366a5fe018a9a6dad3939c8a57e00ec57> (referer: None)
+2023-02-24 23:06:54 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.pixiv.net/ajax/search/illustrations/%5B%20%E5%8E%9F%20%E7%A5%9E%20%2C%20%E9%9B%B7%20%E7%94%B5%20%E5%B0%86%20%E5%86%9B%20%5D?word=%5B%20%E5%8E%9F%20%E7%A5%9E%20%2C%20%E9%9B%B7%20%E7%94%B5%20%E5%B0%86%20%E5%86%9B%20%5D&order=date_d&mode=all&p=1&s_mode=s_tag_full&type=illust_and_ugoira&lang=zh&version=756be60366a5fe018a9a6dad3939c8a57e00ec57> (referer: None)
+Traceback (most recent call last):
+  File "D:\Python\lib\site-packages\scrapy\utils\defer.py", line 240, in iter_errback
+    yield next(it)
+  File "D:\Python\lib\site-packages\scrapy\utils\python.py", line 338, in __next__
+    return next(self.data)
+  File "D:\Python\lib\site-packages\scrapy\utils\python.py", line 338, in __next__
+    return next(self.data)
+  File "D:\Python\lib\site-packages\scrapy\core\spidermw.py", line 79, in process_sync
+    for r in iterable:
+  File "D:\Python\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in <genexpr>
+    return (r for r in result or () if self._filter(r, spider))
+  File "D:\Python\lib\site-packages\scrapy\core\spidermw.py", line 79, in process_sync
+    for r in iterable:
+  File "D:\Python\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 336, in <genexpr>
+    return (self._set_referer(r, response) for r in result or ())
+  File "D:\Python\lib\site-packages\scrapy\core\spidermw.py", line 79, in process_sync
+    for r in iterable:
+  File "D:\Python\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 28, in <genexpr>
+    return (r for r in result or () if self._filter(r, spider))
+  File "D:\Python\lib\site-packages\scrapy\core\spidermw.py", line 79, in process_sync
+    for r in iterable:
+  File "D:\Python\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 32, in <genexpr>
+    return (r for r in result or () if self._filter(r, response, spider))
+  File "D:\Python\lib\site-packages\scrapy\core\spidermw.py", line 79, in process_sync
+    for r in iterable:
+  File "E:\Github_Local\Ideas\Scrapy\ACG\ACG\spiders\pixivsearch.py", line 25, in parse
+    numberofPages=totalNumber//lenPerPage
+ZeroDivisionError: integer division or modulo by zero
+2023-02-24 23:06:54 [scrapy.core.engine] INFO: Closing spider (finished)
+2023-02-24 23:06:54 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 678,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 2173,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'elapsed_time_seconds': 0.935589,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2023, 2, 24, 15, 6, 54, 461710),
+ 'httpcompression/response_bytes': 2406,
+ 'httpcompression/response_count': 1,
+ 'log_count/DEBUG': 8,
+ 'log_count/ERROR': 1,
+ 'log_count/INFO': 10,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'spider_exceptions/ZeroDivisionError': 1,
+ 'start_time': datetime.datetime(2023, 2, 24, 15, 6, 53, 526121)}
+2023-02-24 23:06:54 [scrapy.core.engine] INFO: Spider closed (finished)
+2023-02-24 23:08:04 [scrapy.utils.log] INFO: Scrapy 2.7.1 started (bot: ACG)
+2023-02-24 23:08:04 [scrapy.utils.log] INFO: Versions: lxml 4.9.2.0, libxml2 2.9.12, cssselect 1.2.0, parsel 1.7.0, w3lib 2.1.1, Twisted 22.10.0, Python 3.9.6 (tags/v3.9.6:db3ff76, Jun 28 2021, 15:26:21) [MSC v.1929 64 bit (AMD64)], pyOpenSSL 22.0.0 (OpenSSL 1.1.1n  15 Mar 2022), cryptography 36.0.2, Platform Windows-10-10.0.22621-SP0
+2023-02-24 23:08:04 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'ACG',
+ 'LOG_FILE': 'log/scrapy_2023_2_24.log',
+ 'NEWSPIDER_MODULE': 'ACG.spiders',
+ 'REQUEST_FINGERPRINTER_IMPLEMENTATION': '2.7',
+ 'SPIDER_MODULES': ['ACG.spiders'],
+ 'TWISTED_REACTOR': 'twisted.internet.asyncioreactor.AsyncioSelectorReactor'}
+2023-02-24 23:08:04 [asyncio] DEBUG: Using selector: SelectSelector
+2023-02-24 23:08:04 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+2023-02-24 23:08:04 [scrapy.utils.log] DEBUG: Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
+2023-02-24 23:08:04 [scrapy.extensions.telnet] INFO: Telnet Password: b06975bf617d8241
+2023-02-24 23:08:04 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2023-02-24 23:08:04 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2023-02-24 23:08:04 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2023-02-24 23:08:04 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2023-02-24 23:08:04 [scrapy.core.engine] INFO: Spider opened
+2023-02-24 23:08:04 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2023-02-24 23:08:04 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2023-02-24 23:08:05 [filelock] DEBUG: Attempting to acquire lock 2383144823344 on D:\Python\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2023-02-24 23:08:05 [filelock] DEBUG: Lock 2383144823344 acquired on D:\Python\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2023-02-24 23:08:05 [filelock] DEBUG: Attempting to release lock 2383144823344 on D:\Python\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2023-02-24 23:08:05 [filelock] DEBUG: Lock 2383144823344 released on D:\Python\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2023-02-24 23:08:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.pixiv.net/ajax/search/illustrations/%5B%20%E5%8E%9F%20%E7%A5%9E%20%2C%20%E9%9B%B7%20%E7%94%B5%20%E5%B0%86%20%E5%86%9B%20%5D?word=%5B%20%E5%8E%9F%20%E7%A5%9E%20%2C%20%E9%9B%B7%20%E7%94%B5%20%E5%B0%86%20%E5%86%9B%20%5D&order=date_d&mode=all&p=1&s_mode=s_tag_full&type=illust_and_ugoira&lang=zh&version=756be60366a5fe018a9a6dad3939c8a57e00ec57> (referer: None)
+2023-02-24 23:08:05 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.pixiv.net/ajax/search/illustrations/%5B%20%E5%8E%9F%20%E7%A5%9E%20%2C%20%E9%9B%B7%20%E7%94%B5%20%E5%B0%86%20%E5%86%9B%20%5D?word=%5B%20%E5%8E%9F%20%E7%A5%9E%20%2C%20%E9%9B%B7%20%E7%94%B5%20%E5%B0%86%20%E5%86%9B%20%5D&order=date_d&mode=all&p=1&s_mode=s_tag_full&type=illust_and_ugoira&lang=zh&version=756be60366a5fe018a9a6dad3939c8a57e00ec57> (referer: None)
+Traceback (most recent call last):
+  File "D:\Python\lib\site-packages\scrapy\utils\defer.py", line 240, in iter_errback
+    yield next(it)
+  File "D:\Python\lib\site-packages\scrapy\utils\python.py", line 338, in __next__
+    return next(self.data)
+  File "D:\Python\lib\site-packages\scrapy\utils\python.py", line 338, in __next__
+    return next(self.data)
+  File "D:\Python\lib\site-packages\scrapy\core\spidermw.py", line 79, in process_sync
+    for r in iterable:
+  File "D:\Python\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in <genexpr>
+    return (r for r in result or () if self._filter(r, spider))
+  File "D:\Python\lib\site-packages\scrapy\core\spidermw.py", line 79, in process_sync
+    for r in iterable:
+  File "D:\Python\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 336, in <genexpr>
+    return (self._set_referer(r, response) for r in result or ())
+  File "D:\Python\lib\site-packages\scrapy\core\spidermw.py", line 79, in process_sync
+    for r in iterable:
+  File "D:\Python\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 28, in <genexpr>
+    return (r for r in result or () if self._filter(r, spider))
+  File "D:\Python\lib\site-packages\scrapy\core\spidermw.py", line 79, in process_sync
+    for r in iterable:
+  File "D:\Python\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 32, in <genexpr>
+    return (r for r in result or () if self._filter(r, response, spider))
+  File "D:\Python\lib\site-packages\scrapy\core\spidermw.py", line 79, in process_sync
+    for r in iterable:
+  File "E:\Github_Local\Ideas\Scrapy\ACG\ACG\spiders\pixivsearch.py", line 26, in parse
+    numberofPages=totalNumber//lenPerPage
+ZeroDivisionError: integer division or modulo by zero
+2023-02-24 23:08:05 [scrapy.core.engine] INFO: Closing spider (finished)
+2023-02-24 23:08:05 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 678,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 2174,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'elapsed_time_seconds': 1.336825,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2023, 2, 24, 15, 8, 5, 996109),
+ 'httpcompression/response_bytes': 2406,
+ 'httpcompression/response_count': 1,
+ 'log_count/DEBUG': 8,
+ 'log_count/ERROR': 1,
+ 'log_count/INFO': 10,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'spider_exceptions/ZeroDivisionError': 1,
+ 'start_time': datetime.datetime(2023, 2, 24, 15, 8, 4, 659284)}
+2023-02-24 23:08:05 [scrapy.core.engine] INFO: Spider closed (finished)
+2023-02-24 23:08:49 [scrapy.utils.log] INFO: Scrapy 2.7.1 started (bot: ACG)
+2023-02-24 23:08:49 [scrapy.utils.log] INFO: Versions: lxml 4.9.2.0, libxml2 2.9.12, cssselect 1.2.0, parsel 1.7.0, w3lib 2.1.1, Twisted 22.10.0, Python 3.9.6 (tags/v3.9.6:db3ff76, Jun 28 2021, 15:26:21) [MSC v.1929 64 bit (AMD64)], pyOpenSSL 22.0.0 (OpenSSL 1.1.1n  15 Mar 2022), cryptography 36.0.2, Platform Windows-10-10.0.22621-SP0
+2023-02-24 23:08:49 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'ACG',
+ 'LOG_FILE': 'log/scrapy_2023_2_24.log',
+ 'NEWSPIDER_MODULE': 'ACG.spiders',
+ 'REQUEST_FINGERPRINTER_IMPLEMENTATION': '2.7',
+ 'SPIDER_MODULES': ['ACG.spiders'],
+ 'TWISTED_REACTOR': 'twisted.internet.asyncioreactor.AsyncioSelectorReactor'}
+2023-02-24 23:08:49 [asyncio] DEBUG: Using selector: SelectSelector
+2023-02-24 23:08:49 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+2023-02-24 23:08:49 [scrapy.utils.log] DEBUG: Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
+2023-02-24 23:08:49 [scrapy.extensions.telnet] INFO: Telnet Password: e037c860b938ad20
+2023-02-24 23:08:49 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2023-02-24 23:08:50 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2023-02-24 23:08:50 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2023-02-24 23:08:50 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2023-02-24 23:08:50 [scrapy.core.engine] INFO: Spider opened
+2023-02-24 23:08:50 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2023-02-24 23:08:50 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2023-02-24 23:08:51 [filelock] DEBUG: Attempting to acquire lock 1581194863568 on D:\Python\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2023-02-24 23:08:51 [filelock] DEBUG: Lock 1581194863568 acquired on D:\Python\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2023-02-24 23:08:51 [filelock] DEBUG: Attempting to release lock 1581194863568 on D:\Python\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2023-02-24 23:08:51 [filelock] DEBUG: Lock 1581194863568 released on D:\Python\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2023-02-24 23:08:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.pixiv.net/ajax/search/illustrations/%5B%20%E5%8E%9F%20%E7%A5%9E%20%2C%20%E9%9B%B7%20%E7%94%B5%20%E5%B0%86%20%E5%86%9B%20%5D?word=%5B%20%E5%8E%9F%20%E7%A5%9E%20%2C%20%E9%9B%B7%20%E7%94%B5%20%E5%B0%86%20%E5%86%9B%20%5D&order=date_d&mode=all&p=1&s_mode=s_tag_full&type=illust_and_ugoira&lang=zh&version=756be60366a5fe018a9a6dad3939c8a57e00ec57> (referer: None)
+2023-02-24 23:08:51 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.pixiv.net/ajax/search/illustrations/%5B%20%E5%8E%9F%20%E7%A5%9E%20%2C%20%E9%9B%B7%20%E7%94%B5%20%E5%B0%86%20%E5%86%9B%20%5D?word=%5B%20%E5%8E%9F%20%E7%A5%9E%20%2C%20%E9%9B%B7%20%E7%94%B5%20%E5%B0%86%20%E5%86%9B%20%5D&order=date_d&mode=all&p=1&s_mode=s_tag_full&type=illust_and_ugoira&lang=zh&version=756be60366a5fe018a9a6dad3939c8a57e00ec57> (referer: None)
+Traceback (most recent call last):
+  File "D:\Python\lib\site-packages\scrapy\utils\defer.py", line 240, in iter_errback
+    yield next(it)
+  File "D:\Python\lib\site-packages\scrapy\utils\python.py", line 338, in __next__
+    return next(self.data)
+  File "D:\Python\lib\site-packages\scrapy\utils\python.py", line 338, in __next__
+    return next(self.data)
+  File "D:\Python\lib\site-packages\scrapy\core\spidermw.py", line 79, in process_sync
+    for r in iterable:
+  File "D:\Python\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in <genexpr>
+    return (r for r in result or () if self._filter(r, spider))
+  File "D:\Python\lib\site-packages\scrapy\core\spidermw.py", line 79, in process_sync
+    for r in iterable:
+  File "D:\Python\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 336, in <genexpr>
+    return (self._set_referer(r, response) for r in result or ())
+  File "D:\Python\lib\site-packages\scrapy\core\spidermw.py", line 79, in process_sync
+    for r in iterable:
+  File "D:\Python\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 28, in <genexpr>
+    return (r for r in result or () if self._filter(r, spider))
+  File "D:\Python\lib\site-packages\scrapy\core\spidermw.py", line 79, in process_sync
+    for r in iterable:
+  File "D:\Python\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 32, in <genexpr>
+    return (r for r in result or () if self._filter(r, response, spider))
+  File "D:\Python\lib\site-packages\scrapy\core\spidermw.py", line 79, in process_sync
+    for r in iterable:
+  File "E:\Github_Local\Ideas\Scrapy\ACG\ACG\spiders\pixivsearch.py", line 26, in parse
+    numberofPages=totalNumber//lenPerPage
+ZeroDivisionError: integer division or modulo by zero
+2023-02-24 23:08:51 [scrapy.core.engine] INFO: Closing spider (finished)
+2023-02-24 23:08:51 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 678,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 2173,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'elapsed_time_seconds': 0.990925,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2023, 2, 24, 15, 8, 51, 168135),
+ 'httpcompression/response_bytes': 2406,
+ 'httpcompression/response_count': 1,
+ 'log_count/DEBUG': 8,
+ 'log_count/ERROR': 1,
+ 'log_count/INFO': 10,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'spider_exceptions/ZeroDivisionError': 1,
+ 'start_time': datetime.datetime(2023, 2, 24, 15, 8, 50, 177210)}
+2023-02-24 23:08:51 [scrapy.core.engine] INFO: Spider closed (finished)
+2023-02-24 23:08:56 [scrapy.utils.log] INFO: Scrapy 2.7.1 started (bot: ACG)
+2023-02-24 23:08:56 [scrapy.utils.log] INFO: Versions: lxml 4.9.2.0, libxml2 2.9.12, cssselect 1.2.0, parsel 1.7.0, w3lib 2.1.1, Twisted 22.10.0, Python 3.9.6 (tags/v3.9.6:db3ff76, Jun 28 2021, 15:26:21) [MSC v.1929 64 bit (AMD64)], pyOpenSSL 22.0.0 (OpenSSL 1.1.1n  15 Mar 2022), cryptography 36.0.2, Platform Windows-10-10.0.22621-SP0
+2023-02-24 23:08:56 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'ACG',
+ 'LOG_FILE': 'log/scrapy_2023_2_24.log',
+ 'NEWSPIDER_MODULE': 'ACG.spiders',
+ 'REQUEST_FINGERPRINTER_IMPLEMENTATION': '2.7',
+ 'SPIDER_MODULES': ['ACG.spiders'],
+ 'TWISTED_REACTOR': 'twisted.internet.asyncioreactor.AsyncioSelectorReactor'}
+2023-02-24 23:08:56 [asyncio] DEBUG: Using selector: SelectSelector
+2023-02-24 23:08:56 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+2023-02-24 23:08:56 [scrapy.utils.log] DEBUG: Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
+2023-02-24 23:08:56 [scrapy.extensions.telnet] INFO: Telnet Password: e8afa32cd28fe67f
+2023-02-24 23:08:56 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2023-02-24 23:08:56 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2023-02-24 23:08:56 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2023-02-24 23:08:56 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2023-02-24 23:08:56 [scrapy.core.engine] INFO: Spider opened
+2023-02-24 23:08:56 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2023-02-24 23:08:56 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2023-02-24 23:08:58 [filelock] DEBUG: Attempting to acquire lock 2158822121872 on D:\Python\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2023-02-24 23:08:58 [filelock] DEBUG: Lock 2158822121872 acquired on D:\Python\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2023-02-24 23:08:58 [filelock] DEBUG: Attempting to release lock 2158822121872 on D:\Python\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2023-02-24 23:08:58 [filelock] DEBUG: Lock 2158822121872 released on D:\Python\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+https://www.pixiv.net/ajax/search/illustrations/原神 雷电将军?word=原神 雷电将军&order=date_d&mode=all&p=1&s_mode=s_tag_full&type=illust_and_ugoira&lang=zh&version=756be60366a5fe018a9a6dad3939c8a57e00ec57?word=%5B%20%E5%8E%9F%20%E7%A5%9E%20%2C%20%E9%9B%B7%20%E7%94%B5%20%E5%B0%86%20%E5%86%9B%20%5D&order=date_d&mode=all&p=1&s_mode=s_tag_full&type=illust_and_ugoira&lang=zh&version=756be60366a5fe018a9a6dad3939c8a57e00ec57> (referer: None)
+2023-02-24 23:08:58 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.pixiv.net/ajax/search/illustrations/%5B%20%E5%8E%9F%20%E7%A5%9E%20%2C%20%E9%9B%B7%20%E7%94%B5%20%E5%B0%86%20%E5%86%9B%20%5D?word=%5B%20%E5%8E%9F%20%E7%A5%9E%20%2C%20%E9%9B%B7%20%E7%94%B5%20%E5%B0%86%20%E5%86%9B%20%5D&order=date_d&mode=all&p=1&s_mode=s_tag_full&type=illust_and_ugoira&lang=zh&version=756be60366a5fe018a9a6dad3939c8a57e00ec57> (referer: None)
+Traceback (most recent call last):
+  File "D:\Python\lib\site-packages\scrapy\utils\defer.py", line 240, in iter_errback
+    yield next(it)
+  File "D:\Python\lib\site-packages\scrapy\utils\python.py", line 338, in __next__
+    return next(self.data)
+  File "D:\Python\lib\site-packages\scrapy\utils\python.py", line 338, in __next__
+    return next(self.data)
+  File "D:\Python\lib\site-packages\scrapy\core\spidermw.py", line 79, in process_sync
+    for r in iterable:
+  File "D:\Python\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in <genexpr>
+    return (r for r in result or () if self._filter(r, spider))
+  File "D:\Python\lib\site-packages\scrapy\core\spidermw.py", line 79, in process_sync
+    for r in iterable:
+  File "D:\Python\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 336, in <genexpr>
+    return (self._set_referer(r, response) for r in result or ())
+  File "D:\Python\lib\site-packages\scrapy\core\spidermw.py", line 79, in process_sync
+    for r in iterable:
+  File "D:\Python\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 28, in <genexpr>
+    return (r for r in result or () if self._filter(r, spider))
+  File "D:\Python\lib\site-packages\scrapy\core\spidermw.py", line 79, in process_sync
+    for r in iterable:
+  File "D:\Python\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 32, in <genexpr>
+    return (r for r in result or () if self._filter(r, response, spider))
+  File "D:\Python\lib\site-packages\scrapy\core\spidermw.py", line 79, in process_sync
+    for r in iterable:
+  File "E:\Github_Local\Ideas\Scrapy\ACG\ACG\spiders\pixivsearch.py", line 29, in parse
+    numberofPages=totalNumber//lenPerPage
+ZeroDivisionError: integer division or modulo by zero
+2023-02-24 23:08:58 [scrapy.core.engine] INFO: Closing spider (finished)
+2023-02-24 23:08:58 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 678,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 2174,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'elapsed_time_seconds': 1.560726,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2023, 2, 24, 15, 8, 58, 294218),
+ 'httpcompression/response_bytes': 2405,
+ 'httpcompression/response_count': 1,
+ 'log_count/DEBUG': 8,
+ 'log_count/ERROR': 1,
+ 'log_count/INFO': 10,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'spider_exceptions/ZeroDivisionError': 1,
+ 'start_time': datetime.datetime(2023, 2, 24, 15, 8, 56, 733492)}
+2023-02-24 23:08:58 [scrapy.core.engine] INFO: Spider closed (finished)

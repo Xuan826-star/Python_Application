@@ -1,0 +1,875 @@
+{
+    "root": {
+        "data": {
+            "id": "cqo870vwj5c0",
+            "created": 1676981123866,
+            "text": "pixiv"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "cqo8bxib5jc0",
+                    "created": 1676981508334,
+                    "text": "img_rank",
+                    "layout_mind_offset": {
+                        "x": -56,
+                        "y": -140
+                    }
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cqo8c3t2eq00",
+                            "created": 1676981522046,
+                            "text": "base_url",
+                            "expandState": "expand"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cqo8c7bfggg0",
+                                    "created": 1676981529686,
+                                    "text": "https://www.pixiv.net/ranking.php"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cqo8c9o2t680",
+                            "created": 1676981534805,
+                            "text": "para",
+                            "expandState": "collapse"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cqo8ccots680",
+                                    "created": 1676981541380,
+                                    "text": "mode",
+                                    "expandState": "collapse"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cqo8cflgcpk0",
+                                            "created": 1676981547707,
+                                            "text": "daily"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cqo8cgz332g0",
+                                            "created": 1676981550708,
+                                            "text": "weekly"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cqo8ci9ji5c0",
+                                            "created": 1676981553517,
+                                            "text": "monthly"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cqo8cphthwo0",
+                                            "created": 1676981569255,
+                                            "text": "rookie"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cqo8kw3uw0g0",
+                                            "created": 1676982210561,
+                                            "text": "original"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cqo8crtugm80",
+                                            "created": 1676981574335,
+                                            "text": "daily_ai"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cqo8ctbmdi80",
+                                            "created": 1676981577587,
+                                            "text": "male"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cqo8cuuel1c0",
+                                            "created": 1676981580900,
+                                            "text": "female"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cqo8ilp2nh40",
+                                            "created": 1676982031171,
+                                            "text": "daily_r18"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cqo8iovx1p40",
+                                            "created": 1676982038115,
+                                            "text": "weekly_r18"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cqo8j26ovag0",
+                                            "created": 1676982067065,
+                                            "text": "daily_r18_ai"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cqo8j7ukp400",
+                                            "created": 1676982079393,
+                                            "text": "male_r18"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cqo8jelcueo0",
+                                            "created": 1676982094073,
+                                            "text": "female_r18"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "cqo8feajiyg0",
+                                    "created": 1676981779963,
+                                    "text": "content"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cqo8h6iu0bs0",
+                                            "created": 1676981919778,
+                                            "text": "empty->overall"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cqo8fwmzvoo0",
+                                            "created": 1676981819898,
+                                            "text": "illust",
+                                            "priority": null,
+                                            "expandState": "collapse"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "cqo8cflgcpk0",
+                                                    "created": 1676981547707,
+                                                    "text": "daily"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cqo8cgz332g0",
+                                                    "created": 1676981550708,
+                                                    "text": "weekly"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cqo8ci9ji5c0",
+                                                    "created": 1676981553517,
+                                                    "text": "monthly"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cqo8cphthwo0",
+                                                    "created": 1676981569255,
+                                                    "text": "rookie"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cqo8ilp2nh40",
+                                                    "created": 1676982031171,
+                                                    "text": "daily_r18"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cqo8iovx1p40",
+                                                    "created": 1676982038115,
+                                                    "text": "weekly_r18"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cqo8j7ukp400",
+                                                    "created": 1676982079393,
+                                                    "text": "male_r18"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cqo8jelcueo0",
+                                                    "created": 1676982094073,
+                                                    "text": "female_r18"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cqo8g3rfhiw0",
+                                            "created": 1676981835403,
+                                            "text": "ugoira",
+                                            "expandState": "collapse"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "cqo8ilp2nh40",
+                                                    "created": 1676982031171,
+                                                    "text": "daily_r18"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cqo8iovx1p40",
+                                                    "created": 1676982038115,
+                                                    "text": "weekly_r18"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cqo8cflgcpk0",
+                                                    "created": 1676981547707,
+                                                    "text": "daily"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cqo8cgz332g0",
+                                                    "created": 1676981550708,
+                                                    "text": "weekly"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cqo8g9mpogo0",
+                                            "created": 1676981848179,
+                                            "text": "manga",
+                                            "expandState": "collapse"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "cqo8cflgcpk0",
+                                                    "created": 1676981547707,
+                                                    "text": "daily"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cqo8cgz332g0",
+                                                    "created": 1676981550708,
+                                                    "text": "weekly"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cqo8ci9ji5c0",
+                                                    "created": 1676981553517,
+                                                    "text": "monthly"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cqo8cphthwo0",
+                                                    "created": 1676981569255,
+                                                    "text": "rookie"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cqo8ilp2nh40",
+                                                    "created": 1676982031171,
+                                                    "text": "daily_r18"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cqo8iovx1p40",
+                                                    "created": 1676982038115,
+                                                    "text": "weekly_r18"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cqo8j7ukp400",
+                                                    "created": 1676982079393,
+                                                    "text": "male_r18"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cqo8jelcueo0",
+                                                    "created": 1676982094073,
+                                                    "text": "female_r18"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "cqo8cy1wkcw0",
+                                    "created": 1676981587883,
+                                    "text": "date",
+                                    "expandState": "collapse"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cqo8dc8l1sw0",
+                                            "created": 1676981618762,
+                                            "text": "empty->newest"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cqo8d0vn06g0",
+                                            "created": 1676981594035,
+                                            "text": "%Y%m%d"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cqo8d8y6bhk0",
+                                            "created": 1676981611603,
+                                            "text": "20230219"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "cqo8dohd4pk0",
+                                    "created": 1676981645415,
+                                    "text": "p",
+                                    "expandState": "collapse"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cqo8drsrwsw0",
+                                            "created": 1676981652635,
+                                            "text": "page number"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cqo8ecc3llk0",
+                            "created": 1676981697339,
+                            "text": "return",
+                            "expandState": "collapse"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cqo8efojkxk0",
+                                    "created": 1676981704622,
+                                    "text": "json file"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cqo8y9dpsyg0",
+                    "created": 1676983258190,
+                    "text": "artwork_page"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cqo9e96k69c0",
+                            "created": 1676984511584,
+                            "text": "base_url"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cqo9ebwpt940",
+                                    "created": 1676984517519,
+                                    "text": "https://www.pixiv.net/artworks/{id}"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cqo90rwwps80",
+                            "created": 1676983455261,
+                            "text": "artwork"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cqpy20oq6zk0",
+                                    "created": 1677155640425,
+                                    "text": "illust_url:     https://www.pixiv.net/ajax/illust/{id}?ref=https://www.pixiv.net/&lang=zh&version=756be60366a5fe018a9a6dad3939c8a57e00ec57"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cqpyav737yw0",
+                                    "created": 1677156333752,
+                                    "text": "ugoira_url:     https://www.pixiv.net/ajax/illust/{id}/ugoira_meta?lang=zh&version=756be60366a5fe018a9a6dad3939c8a57e00ec57"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cqpy2x6xdeg0",
+                                    "created": 1677155711183,
+                                    "text": "version is a constant"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cqo90t779c00",
+                            "created": 1676983458060,
+                            "text": "footer",
+                            "expandState": "expand"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cqo91rtu90g0",
+                                    "created": 1676983533439,
+                                    "text": "tags"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cqo91tkrs9s0",
+                                    "created": 1676983537244,
+                                    "text": "info"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cqo91vvgtn40",
+                                    "created": 1676983542245,
+                                    "text": "submit time"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cqo924h69pc0",
+                            "created": 1676983560971,
+                            "text": "author"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cqo928qsei00",
+                            "created": 1676983570260,
+                            "text": "comment"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cqpydvv9zj40",
+                                    "created": 1677156570308,
+                                    "text": "url:     https://www.pixiv.net/ajax/illusts/comments/roots?illust_id={id}&offset=0&limit=3&lang=zh&version=756be60366a5fe018a9a6dad3939c8a57e00ec57",
+                                    "layout_right_offset": {
+                                        "x": 12,
+                                        "y": -1
+                                    }
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cqo92aba6o00",
+                            "created": 1676983573676,
+                            "text": "relate"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cqq0qa9oc9k0",
+                                    "created": 1677163184243,
+                                    "text": "url:     https://www.pixiv.net/ajax/illust/{id}/recommend/init?limit=30&lang=zh&version=756be60366a5fe018a9a6dad3939c8a57e00ec57"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cqo95wmjuv40",
+                    "created": 1676983857339,
+                    "text": "author_page"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cqo9cap954g0",
+                            "created": 1676984358162,
+                            "text": "base_url"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cqo9ct7xch40",
+                                    "created": 1676984398473,
+                                    "text": "https://www.pixiv.net/users/{id}/"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cqo961lej7c0",
+                            "created": 1676983868154,
+                            "text": "info",
+                            "expandState": "expand"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cqo963uuisw0",
+                                    "created": 1676983873078,
+                                    "text": "name"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cqo96ngegww0",
+                                    "created": 1676983915740,
+                                    "text": "img"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cqo967xs34g0",
+                                    "created": 1676983881963,
+                                    "text": "subscription"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cqo96dquifs0",
+                                    "created": 1676983894604,
+                                    "text": "location"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cqo96givhl40",
+                                    "created": 1676983900652,
+                                    "text": "contact"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cqo96sijxjk0",
+                                    "created": 1676983926754,
+                                    "text": "abstract"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cqo97kfso9s0",
+                            "created": 1676983987538,
+                            "text": "homepage",
+                            "expandState": "collapse"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cqo98bv2v8w0",
+                                    "created": 1676984047235,
+                                    "text": "representative"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cqo98f4f6ao0",
+                                    "created": 1676984054330,
+                                    "text": "part of all artworks"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cqo9a0kul4g0",
+                                    "created": 1676984179400,
+                                    "text": "view all"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cqo9a3jri8g0",
+                                            "created": 1676984185865,
+                                            "text": "tags"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cqo9a8m54fc0",
+                                            "created": 1676984196892,
+                                            "text": "all artworks"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cqo97saldvc0",
+                            "created": 1676984004637,
+                            "text": "illustration",
+                            "expandState": "collapse"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cqo9ar1797k0",
+                                    "created": 1676984236985,
+                                    "text": "tags"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cqo9attm90g0",
+                                    "created": 1676984243057,
+                                    "text": "all illustrations"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cqo98142cdc0",
+                            "created": 1676984023833,
+                            "text": "manga",
+                            "expandState": "collapse"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cqo9axy2xa80",
+                                    "created": 1676984252034,
+                                    "text": "tags"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cqo9azpg18g0",
+                                    "created": 1676984255865,
+                                    "text": "all mangas"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cqo984j8vm00",
+                            "created": 1676984031282,
+                            "text": "collection",
+                            "expandState": "collapse"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cqo9bf1agrk0",
+                                    "created": 1676984289233,
+                                    "text": "tags"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cqo9bg0iqdc0",
+                                    "created": 1676984291363,
+                                    "text": "all collections"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cqp2cuo7hwg0",
+                    "created": 1677066213822,
+                    "text": "login"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cqp2d4sgvrk0",
+                            "created": 1677066235848,
+                            "text": "url"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cqp2d8gndy80",
+                                    "created": 1677066243840,
+                                    "text": "https://accounts.pixiv.net/login?return_to=https%3A%2F%2Fwww.pixiv.net%2F&lang=zh&source=pc&view_type=page"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cqqtv7tk74o0",
+                    "created": 1677245382923,
+                    "text": "search"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cqqtvcutk8g0",
+                            "created": 1677245393883,
+                            "text": "url"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cqqtvehf8t40",
+                                    "created": 1677245397427,
+                                    "text": "https://www.pixiv.net/tags/{%20tag}"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cqqtwd7g42o0",
+                                    "created": 1677245473011,
+                                    "text": "optional: /illustration,/manga"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cqque7jzhq80",
+                                    "created": 1677246871263,
+                                    "text": "https://www.pixiv.net/ajax/search/top/{coded tags}?lang=zh&version=756be60366a5fe018a9a6dad3939c8a57e00ec57"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cqquh91b8xc0",
+                                    "created": 1677247109580,
+                                    "text": "https://www.pixiv.net/ajax/search/illustrations/{coded tags}?word={coded tags}&order=date_d&mode=all&p=1&s_mode=s_tag_full&type=illust_and_ugoira&lang=zh&version=756be60366a5fe018a9a6dad3939c8a57e00ec57"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "default",
+    "theme": "fresh-purple",
+    "version": "1.4.43"
+}

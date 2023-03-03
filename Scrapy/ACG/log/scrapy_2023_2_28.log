@@ -1,0 +1,875 @@
+2023-02-28 10:48:40 [scrapy.utils.log] INFO: Scrapy 2.7.1 started (bot: ACG)
+2023-02-28 10:48:40 [scrapy.utils.log] INFO: Versions: lxml 4.9.2.0, libxml2 2.9.12, cssselect 1.2.0, parsel 1.7.0, w3lib 2.1.1, Twisted 22.10.0, Python 3.9.6 (tags/v3.9.6:db3ff76, Jun 28 2021, 15:26:21) [MSC v.1929 64 bit (AMD64)], pyOpenSSL 22.0.0 (OpenSSL 1.1.1n  15 Mar 2022), cryptography 36.0.2, Platform Windows-10-10.0.22621-SP0
+2023-02-28 10:48:40 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'ACG',
+ 'LOG_FILE': 'log/scrapy_2023_2_28.log',
+ 'NEWSPIDER_MODULE': 'ACG.spiders',
+ 'REQUEST_FINGERPRINTER_IMPLEMENTATION': '2.7',
+ 'SPIDER_MODULES': ['ACG.spiders'],
+ 'TWISTED_REACTOR': 'twisted.internet.asyncioreactor.AsyncioSelectorReactor'}
+2023-02-28 10:48:40 [asyncio] DEBUG: Using selector: SelectSelector
+2023-02-28 10:48:40 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+2023-02-28 10:48:40 [scrapy.utils.log] DEBUG: Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
+2023-02-28 10:48:40 [scrapy.extensions.telnet] INFO: Telnet Password: 7186a254b3a0aafb
+2023-02-28 10:48:40 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2023-02-28 10:48:40 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['ACG.middlewares.DelayedRequestsMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2023-02-28 10:48:40 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2023-02-28 10:48:40 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2023-02-28 10:48:40 [scrapy.core.engine] INFO: Spider opened
+2023-02-28 10:48:41 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2023-02-28 10:48:41 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6024
+2023-02-28 10:48:41 [scrapy.core.engine] DEBUG: Crawled (404) <GET http://2302--2700.0227.world.chickengotogo.com:1223/o/> (referer: None)
+2023-02-28 10:48:42 [filelock] DEBUG: Attempting to acquire lock 2267329585648 on D:\Python\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2023-02-28 10:48:42 [filelock] DEBUG: Lock 2267329585648 acquired on D:\Python\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2023-02-28 10:48:42 [filelock] DEBUG: Attempting to release lock 2267329585648 on D:\Python\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2023-02-28 10:48:42 [filelock] DEBUG: Lock 2267329585648 released on D:\Python\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2023-02-28 10:48:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jan.mmss888.com/> (referer: http://2302--2700.0227.world.chickengotogo.com:1223/o/)
+2023-02-28 10:48:57 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <POST https://www.jan.mmss888.com/> from <POST https://www.jan.mmss888.com/member.php?mod=logging&action=login&loginsubmit=yes&infloat=yes&lssubmit=yes>
+2023-02-28 10:48:57 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://www.jan.mmss888.com/> (referer: https://www.jan.mmss888.com/)
+2023-02-28 10:49:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jan.mmss888.com/> (referer: https://www.jan.mmss888.com/)
+2023-02-28 10:49:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jan.mmss888.com/home.php?mod=spacecp&ac=credit&showcredit=1> (referer: https://www.jan.mmss888.com/)
+2023-02-28 10:49:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jan.mmss888.com/home.php?mod=space&uid=2059673&do=doing&view=me&from=space> (referer: https://www.jan.mmss888.com/)
+2023-02-28 10:49:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jan.mmss888.com/forum.php?mod=viewthread&tid=871233&extra=> (referer: https://www.jan.mmss888.com/)
+2023-02-28 10:49:08 [scrapy.core.engine] DEBUG: Crawled (301) <POST https://www.jan.mmss888.com/home.php?mod=spacecp&ac=doing&view=me> (referer: https://www.jan.mmss888.com/home.php?mod=space&uid=2059673&do=doing&view=me&from=space)
+2023-02-28 10:49:08 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <301 https://www.jan.mmss888.com/home.php?mod=spacecp&ac=doing&view=me>: HTTP status code is not handled or not allowed
+2023-02-28 10:49:08 [scrapy.core.engine] DEBUG: Crawled (301) <POST https://www.jan.mmss888.com/forum.php?mod=post&action=reply&fid=40&tid=871233&extra=&replysubmit=yes&infloat=yes&handlekey=fastpost> (referer: https://www.jan.mmss888.com/forum.php?mod=viewthread&tid=871233&extra=)
+2023-02-28 10:49:08 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <301 https://www.jan.mmss888.com/forum.php?mod=post&action=reply&fid=40&tid=871233&extra=&replysubmit=yes&infloat=yes&handlekey=fastpost>: HTTP status code is not handled or not allowed
+2023-02-28 10:49:41 [scrapy.extensions.logstats] INFO: Crawled 9 pages (at 9 pages/min), scraped 0 items (at 0 items/min)
+2023-02-28 10:50:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jan.mmss888.com/forum.php?mod=viewthread&tid=871231&extra=> (referer: https://www.jan.mmss888.com/)
+2023-02-28 10:50:07 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://www.jan.mmss888.com/forum.php?mod=post&action=reply&fid=40&tid=871231&extra=&replysubmit=yes&infloat=yes&handlekey=fastpost> (referer: https://www.jan.mmss888.com/forum.php?mod=viewthread&tid=871231&extra=)
+2023-02-28 10:50:08 [scrapy.core.engine] DEBUG: Crawled (301) <POST https://www.jan.mmss888.com/home.php?mod=spacecp&ac=doing&view=me> (referer: https://www.jan.mmss888.com/home.php?mod=space&uid=2059673&do=doing&view=me&from=space)
+2023-02-28 10:50:08 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <301 https://www.jan.mmss888.com/home.php?mod=spacecp&ac=doing&view=me>: HTTP status code is not handled or not allowed
+2023-02-28 10:50:41 [scrapy.extensions.logstats] INFO: Crawled 12 pages (at 3 pages/min), scraped 0 items (at 0 items/min)
+2023-02-28 10:51:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jan.mmss888.com/forum.php?mod=viewthread&tid=871225&extra=> (referer: https://www.jan.mmss888.com/)
+2023-02-28 10:51:10 [scrapy.core.engine] DEBUG: Crawled (301) <POST https://www.jan.mmss888.com/forum.php?mod=post&action=reply&fid=40&tid=871225&extra=&replysubmit=yes&infloat=yes&handlekey=fastpost> (referer: https://www.jan.mmss888.com/forum.php?mod=viewthread&tid=871225&extra=)
+2023-02-28 10:51:10 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <301 https://www.jan.mmss888.com/forum.php?mod=post&action=reply&fid=40&tid=871225&extra=&replysubmit=yes&infloat=yes&handlekey=fastpost>: HTTP status code is not handled or not allowed
+2023-02-28 10:51:10 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://www.jan.mmss888.com/home.php?mod=spacecp&ac=doing&view=me> (referer: https://www.jan.mmss888.com/home.php?mod=space&uid=2059673&do=doing&view=me&from=space)
+2023-02-28 10:51:41 [scrapy.extensions.logstats] INFO: Crawled 15 pages (at 3 pages/min), scraped 0 items (at 0 items/min)
+2023-02-28 10:52:12 [scrapy.core.engine] DEBUG: Crawled (301) <POST https://www.jan.mmss888.com/home.php?mod=spacecp&ac=doing&view=me> (referer: https://www.jan.mmss888.com/home.php?mod=space&uid=2059673&do=doing&view=me&from=space)
+2023-02-28 10:52:12 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <301 https://www.jan.mmss888.com/home.php?mod=spacecp&ac=doing&view=me>: HTTP status code is not handled or not allowed
+2023-02-28 10:52:41 [scrapy.extensions.logstats] INFO: Crawled 16 pages (at 1 pages/min), scraped 0 items (at 0 items/min)
+2023-02-28 10:53:15 [scrapy.core.engine] DEBUG: Crawled (301) <POST https://www.jan.mmss888.com/home.php?mod=spacecp&ac=doing&view=me> (referer: https://www.jan.mmss888.com/home.php?mod=space&uid=2059673&do=doing&view=me&from=space)
+2023-02-28 10:53:15 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <301 https://www.jan.mmss888.com/home.php?mod=spacecp&ac=doing&view=me>: HTTP status code is not handled or not allowed
+2023-02-28 10:53:15 [py.warnings] WARNING: E:\Github_Local\Ideas\Scrapy\ACG\ACG\spiders\sbook.py:105: ScrapyDeprecationWarning: Passing a 'spider' argument to ExecutionEngine.crawl is deprecated
+  self.crawler.engine.crawl(req, spider)
+
+2023-02-28 10:53:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jan.mmss888.com/home.php?mod=spacecp&ac=credit&showcredit=1> (referer: None)
+2023-02-28 10:53:16 [scrapy.dupefilters] DEBUG: Filtered duplicate request: <GET https://www.jan.mmss888.com/home.php?mod=spacecp&ac=credit&showcredit=1> - no more duplicates will be shown (see DUPEFILTER_DEBUG to show all duplicates)
+2023-02-28 10:53:16 [scrapy.core.engine] INFO: Closing spider (finished)
+2023-02-28 10:53:16 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 21844,
+ 'downloader/request_count': 19,
+ 'downloader/request_method_count/GET': 9,
+ 'downloader/request_method_count/POST': 10,
+ 'downloader/response_bytes': 143881,
+ 'downloader/response_count': 19,
+ 'downloader/response_status_count/200': 11,
+ 'downloader/response_status_count/301': 7,
+ 'downloader/response_status_count/404': 1,
+ 'dupefilter/filtered': 1,
+ 'elapsed_time_seconds': 275.369179,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2023, 2, 28, 2, 53, 16, 385211),
+ 'httpcompression/response_bytes': 502244,
+ 'httpcompression/response_count': 12,
+ 'httperror/response_ignored_count': 6,
+ 'httperror/response_ignored_status_count/301': 6,
+ 'log_count/DEBUG': 27,
+ 'log_count/INFO': 20,
+ 'log_count/WARNING': 1,
+ 'request_depth_max': 5,
+ 'response_received_count': 18,
+ 'scheduler/dequeued': 19,
+ 'scheduler/dequeued/memory': 19,
+ 'scheduler/enqueued': 19,
+ 'scheduler/enqueued/memory': 19,
+ 'start_time': datetime.datetime(2023, 2, 28, 2, 48, 41, 16032)}
+2023-02-28 10:53:16 [scrapy.core.engine] INFO: Spider closed (finished)
+2023-02-28 21:04:32 [scrapy.utils.log] INFO: Scrapy 2.7.1 started (bot: ACG)
+2023-02-28 21:04:32 [scrapy.utils.log] INFO: Versions: lxml 4.9.2.0, libxml2 2.9.12, cssselect 1.2.0, parsel 1.7.0, w3lib 2.1.1, Twisted 22.10.0, Python 3.9.6 (tags/v3.9.6:db3ff76, Jun 28 2021, 15:26:21) [MSC v.1929 64 bit (AMD64)], pyOpenSSL 22.0.0 (OpenSSL 1.1.1n  15 Mar 2022), cryptography 36.0.2, Platform Windows-10-10.0.22621-SP0
+2023-02-28 21:04:32 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'ACG',
+ 'LOG_FILE': 'log/scrapy_2023_2_28.log',
+ 'NEWSPIDER_MODULE': 'ACG.spiders',
+ 'REQUEST_FINGERPRINTER_IMPLEMENTATION': '2.7',
+ 'SPIDER_MODULES': ['ACG.spiders'],
+ 'TWISTED_REACTOR': 'twisted.internet.asyncioreactor.AsyncioSelectorReactor'}
+2023-02-28 21:04:32 [asyncio] DEBUG: Using selector: SelectSelector
+2023-02-28 21:04:32 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+2023-02-28 21:04:32 [scrapy.utils.log] DEBUG: Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
+2023-02-28 21:04:32 [scrapy.extensions.telnet] INFO: Telnet Password: 4f909adaf03aa4aa
+2023-02-28 21:04:32 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2023-02-28 21:04:32 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['ACG.middlewares.DelayedRequestsMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2023-02-28 21:04:32 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2023-02-28 21:04:32 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2023-02-28 21:04:32 [scrapy.core.engine] INFO: Spider opened
+2023-02-28 21:04:32 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2023-02-28 21:04:32 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6024
+2023-02-28 21:04:33 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://yhdm6.top/> from <GET http://yhdm6.top/>
+2023-02-28 21:04:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://yhdm6.top/> (referer: None)
+2023-02-28 21:04:35 [scrapy.core.scraper] ERROR: Spider error processing <GET https://yhdm6.top/> (referer: None)
+Traceback (most recent call last):
+  File "D:\Python\lib\site-packages\scrapy\utils\defer.py", line 240, in iter_errback
+    yield next(it)
+  File "D:\Python\lib\site-packages\scrapy\utils\python.py", line 338, in __next__
+    return next(self.data)
+  File "D:\Python\lib\site-packages\scrapy\utils\python.py", line 338, in __next__
+    return next(self.data)
+  File "D:\Python\lib\site-packages\scrapy\core\spidermw.py", line 79, in process_sync
+    for r in iterable:
+  File "D:\Python\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in <genexpr>
+    return (r for r in result or () if self._filter(r, spider))
+  File "D:\Python\lib\site-packages\scrapy\core\spidermw.py", line 79, in process_sync
+    for r in iterable:
+  File "D:\Python\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 336, in <genexpr>
+    return (self._set_referer(r, response) for r in result or ())
+  File "D:\Python\lib\site-packages\scrapy\core\spidermw.py", line 79, in process_sync
+    for r in iterable:
+  File "D:\Python\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 28, in <genexpr>
+    return (r for r in result or () if self._filter(r, spider))
+  File "D:\Python\lib\site-packages\scrapy\core\spidermw.py", line 79, in process_sync
+    for r in iterable:
+  File "D:\Python\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 32, in <genexpr>
+    return (r for r in result or () if self._filter(r, response, spider))
+  File "D:\Python\lib\site-packages\scrapy\core\spidermw.py", line 79, in process_sync
+    for r in iterable:
+  File "E:\Github_Local\Ideas\Scrapy\ACG\ACG\spiders\yinghua.py", line 20, in parseHome
+    for idx in len(timeChart):
+TypeError: 'int' object is not iterable
+2023-02-28 21:04:35 [scrapy.core.engine] INFO: Closing spider (finished)
+2023-02-28 21:04:35 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 688,
+ 'downloader/request_count': 2,
+ 'downloader/request_method_count/GET': 2,
+ 'downloader/response_bytes': 36421,
+ 'downloader/response_count': 2,
+ 'downloader/response_status_count/200': 1,
+ 'downloader/response_status_count/301': 1,
+ 'elapsed_time_seconds': 2.541461,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2023, 2, 28, 13, 4, 35, 277105),
+ 'httpcompression/response_bytes': 191515,
+ 'httpcompression/response_count': 1,
+ 'log_count/DEBUG': 5,
+ 'log_count/ERROR': 1,
+ 'log_count/INFO': 10,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 2,
+ 'scheduler/dequeued/memory': 2,
+ 'scheduler/enqueued': 2,
+ 'scheduler/enqueued/memory': 2,
+ 'spider_exceptions/TypeError': 1,
+ 'start_time': datetime.datetime(2023, 2, 28, 13, 4, 32, 735644)}
+2023-02-28 21:04:35 [scrapy.core.engine] INFO: Spider closed (finished)
+2023-02-28 21:06:02 [scrapy.utils.log] INFO: Scrapy 2.7.1 started (bot: ACG)
+2023-02-28 21:06:02 [scrapy.utils.log] INFO: Versions: lxml 4.9.2.0, libxml2 2.9.12, cssselect 1.2.0, parsel 1.7.0, w3lib 2.1.1, Twisted 22.10.0, Python 3.9.6 (tags/v3.9.6:db3ff76, Jun 28 2021, 15:26:21) [MSC v.1929 64 bit (AMD64)], pyOpenSSL 22.0.0 (OpenSSL 1.1.1n  15 Mar 2022), cryptography 36.0.2, Platform Windows-10-10.0.22621-SP0
+2023-02-28 21:06:02 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'ACG',
+ 'LOG_FILE': 'log/scrapy_2023_2_28.log',
+ 'NEWSPIDER_MODULE': 'ACG.spiders',
+ 'REQUEST_FINGERPRINTER_IMPLEMENTATION': '2.7',
+ 'SPIDER_MODULES': ['ACG.spiders'],
+ 'TWISTED_REACTOR': 'twisted.internet.asyncioreactor.AsyncioSelectorReactor'}
+2023-02-28 21:06:02 [asyncio] DEBUG: Using selector: SelectSelector
+2023-02-28 21:06:02 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+2023-02-28 21:06:02 [scrapy.utils.log] DEBUG: Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
+2023-02-28 21:06:02 [scrapy.extensions.telnet] INFO: Telnet Password: 43e04c82fb014e39
+2023-02-28 21:06:02 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2023-02-28 21:06:02 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['ACG.middlewares.DelayedRequestsMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2023-02-28 21:06:02 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2023-02-28 21:06:02 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2023-02-28 21:06:02 [scrapy.core.engine] INFO: Spider opened
+2023-02-28 21:06:02 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2023-02-28 21:06:02 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6024
+2023-02-28 21:06:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://yhdm6.top/> (referer: None)
+2023-02-28 21:06:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://yhdm6.top/>
+{'chapterHref': '/index.php/vod/detail/id/16118.html',
+ 'img': 'https://pic1.zykpic.com/upload/vod/2023-01-11/16733966511.jpg',
+ 'latest': '08',
+ 'title': '至高之牌',
+ 'tp': '动作',
+ 'weekday': '星期一',
+ 'year': '2022'}
+2023-02-28 21:06:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://yhdm6.top/>
+{'chapterHref': '/index.php/vod/detail/id/16097.html',
+ 'img': 'https://pic1.zykpic.com/upload/vod/2023-01-09/16732758911.jpg',
+ 'latest': '08',
+ 'title': '吸血鬼马上死第二季',
+ 'tp': '日韩',
+ 'weekday': '星期一',
+ 'year': '2023'}
+2023-02-28 21:06:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://yhdm6.top/>
+{'chapterHref': '/index.php/vod/detail/id/14711.html',
+ 'img': 'https://youku.youkuphoto.com/upload/vod/20221010-1/bf33f87c1143fddb2dd1183d9e5ca329.jpg',
+ 'latest': '18',
+ 'title': '飙速宅男第五季',
+ 'tp': '日韩',
+ 'weekday': '星期一',
+ 'year': '2022'}
+2023-02-28 21:06:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://yhdm6.top/>
+{'chapterHref': '/index.php/vod/detail/id/14771.html',
+ 'img': 'https://pic.wujinpp.com/upload/vod/20221024-1/cd47909302ef90cdec846b518d5f7326.jpg',
+ 'latest': '18',
+ 'title': '致不灭的你第二季',
+ 'tp': '日韩',
+ 'weekday': '星期一',
+ 'year': '2022'}
+2023-02-28 21:06:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://yhdm6.top/>
+{'chapterHref': '/index.php/vod/detail/id/14959.html',
+ 'img': 'https://pic.wujinpp.com/upload/vod/20221205-1/dd9b8e23a9080d4659eb7473b50a7040.jpg',
+ 'latest': '12',
+ 'title': '我与机器妹',
+ 'tp': '日韩',
+ 'weekday': '星期一',
+ 'year': '2022'}
+2023-02-28 21:06:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://yhdm6.top/>
+{'chapterHref': '/index.php/vod/detail/id/16093.html',
+ 'img': 'https://pic1.zykpic.com/upload/vod/2023-01-09/16732245811.jpg',
+ 'latest': '08',
+ 'title': '再得一胜！',
+ 'tp': '日韩',
+ 'weekday': '星期一',
+ 'year': '2023'}
+2023-02-28 21:06:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://yhdm6.top/>
+{'chapterHref': '/index.php/vod/detail/id/16100.html',
+ 'img': 'https://pic1.zykpic.com/upload/vod/2023-01-10/16733121371.jpg',
+ 'latest': '08',
+ 'title': '冰海战记第二季',
+ 'tp': '冒险',
+ 'weekday': '星期二',
+ 'year': '2023'}
+2023-02-28 21:06:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://yhdm6.top/>
+{'chapterHref': '/index.php/vod/detail/id/16102.html',
+ 'img': 'https://pic1.zykpic.com/upload/vod/2023-01-10/16733124441.jpg',
+ 'latest': '08',
+ 'title': '英雄王，为了穷尽武道而转生 ～而后成为世界最强见习骑士♀～',
+ 'tp': '日韩',
+ 'weekday': '星期二',
+ 'year': '2023'}
+2023-02-28 21:06:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://yhdm6.top/>
+{'chapterHref': '/index.php/vod/detail/id/15133.html',
+ 'img': 'https://pic.wujinpp.com/upload/vod/20230104-1/09dbc985acb1cf0d037604bdf2b794a8.jpg',
+ 'latest': '08',
+ 'title': '冰属性男子与酷酷女同事',
+ 'tp': '日韩',
+ 'weekday': '星期二',
+ 'year': '2023'}
+2023-02-28 21:06:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://yhdm6.top/>
+{'chapterHref': '/index.php/vod/detail/id/15128.html',
+ 'img': 'https://pic.wujinpp.com/upload/vod/20230103-1/a869063f99af0bfe64fa7aae95baa560.jpg',
+ 'latest': '08',
+ 'title': '不相信人类的冒险者们好像要去拯救世界',
+ 'tp': '日韩',
+ 'weekday': '星期二',
+ 'year': '2023'}
+2023-02-28 21:06:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://yhdm6.top/>
+{'chapterHref': '/index.php/vod/detail/id/16116.html',
+ 'img': 'https://pic.wujinpp.com/upload/vod/20230110-1/454cc6cbd3106944715a6fe484995cba.jpg',
+ 'latest': '06',
+ 'title': '久保同学不放过我',
+ 'tp': '日韩',
+ 'weekday': '星期二',
+ 'year': '2023'}
+2023-02-28 21:06:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://yhdm6.top/>
+{'chapterHref': '/index.php/vod/detail/id/16101.html',
+ 'img': 'https://pic1.zykpic.com/upload/vod/2023-01-10/16733122251.jpg',
+ 'latest': '04',
+ 'title': '妖幻三重奏',
+ 'tp': '动作',
+ 'weekday': '星期二',
+ 'year': '2022'}
+2023-02-28 21:06:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://yhdm6.top/>
+{'chapterHref': '/index.php/vod/detail/id/16105.html',
+ 'img': 'https://pic.wujinpp.com/upload/vod/20230110-1/5bdc1e570654c6503b3de5ed5cbea023.jpg',
+ 'latest': '08',
+ 'title': '复仇者',
+ 'tp': '日韩',
+ 'weekday': '星期三',
+ 'year': '2023'}
+2023-02-28 21:06:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://yhdm6.top/>
+{'chapterHref': '/index.php/vod/detail/id/16117.html',
+ 'img': 'https://pic1.zykpic.com/upload/vod/2023-01-11/16733688481.jpg',
+ 'latest': '7',
+ 'title': '拥有超常技能的异世界流浪美食家',
+ 'tp': '日韩',
+ 'weekday': '星期三',
+ 'year': '2023'}
+2023-02-28 21:06:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://yhdm6.top/>
+{'chapterHref': '/index.php/vod/detail/id/15134.html',
+ 'img': 'https://youku.youkuphoto.com/upload/vod/20230105-1/758a45b00c9a5c77614d7a877e281c71.jpg',
+ 'latest': '08',
+ 'title': '文豪野犬第四季',
+ 'tp': '日韩',
+ 'weekday': '星期三',
+ 'year': '2023'}
+2023-02-28 21:06:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://yhdm6.top/>
+{'chapterHref': '/index.php/vod/detail/id/15132.html',
+ 'img': 'https://youku.youkuphoto.com/upload/vod/20230104-1/e9a09688e1c8603dfaab7d75aa7e473a.jpg',
+ 'latest': '08',
+ 'title': '转生王女与天才千金的魔法革命',
+ 'tp': '日韩',
+ 'weekday': '星期三',
+ 'year': '2023'}
+2023-02-28 21:06:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://yhdm6.top/>
+{'chapterHref': '/index.php/vod/detail/id/16129.html',
+ 'img': 'https://youku.youkuphoto.com/upload/vod/20230112-1/f1dd1d9ca663ac4c2707196daaf3c284.jpg',
+ 'latest': '06',
+ 'title': '因为太怕痛就全点防御力了第二季',
+ 'tp': '日韩',
+ 'weekday': '星期三',
+ 'year': '2023'}
+2023-02-28 21:06:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://yhdm6.top/>
+{'chapterHref': '/index.php/vod/detail/id/14666.html',
+ 'img': 'https://youku.youkuphoto.com/upload/vod/20221005-1/a615cf8967baaf02b696849e402d4904.jpg',
+ 'latest': '20',
+ 'title': '想要成为影之实力者！',
+ 'tp': '动画',
+ 'weekday': '星期三',
+ 'year': '2022'}
+2023-02-28 21:06:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://yhdm6.top/>
+{'chapterHref': '/index.php/vod/detail/id/15136.html',
+ 'img': 'https://youku.youkuphoto.com/upload/vod/20230105-1/8b7d9ca13adc04b60dbf64646fb75467.jpg',
+ 'latest': '08',
+ 'title': '弦音-风舞高中弓道部-第二季',
+ 'tp': '日韩',
+ 'weekday': '星期四',
+ 'year': '2023'}
+2023-02-28 21:06:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://yhdm6.top/>
+{'chapterHref': '/index.php/vod/detail/id/15092.html',
+ 'img': 'https://youku.youkuphoto.com/upload/vod/20221226-1/001b41dbd315d6f9428269be8fb0dfd0.jpg',
+ 'latest': '08',
+ 'title': '别当欧尼酱了！',
+ 'tp': '日韩',
+ 'weekday': '星期四',
+ 'year': '2023'}
+2023-02-28 21:06:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://yhdm6.top/>
+{'chapterHref': '/index.php/vod/detail/id/15141.html',
+ 'img': 'https://pic.feisuimg.com/upload/vod/20230105-1/e3d159c82609ed5ef01a5922d5cb4a6a.jpg',
+ 'latest': '08',
+ 'title': '生而为狗 我很幸福',
+ 'tp': '动画',
+ 'weekday': '星期四',
+ 'year': '2023'}
+2023-02-28 21:06:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://yhdm6.top/>
+{'chapterHref': '/index.php/vod/detail/id/15137.html',
+ 'img': 'https://pic.wujinpp.com/upload/vod/20230105-1/ef1046840b94ae88344b80c7b9de49ae.jpg',
+ 'latest': '8',
+ 'title': '小智是女孩啦！',
+ 'tp': '日韩',
+ 'weekday': '星期四',
+ 'year': '2023'}
+2023-02-28 21:06:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://yhdm6.top/>
+{'chapterHref': '/index.php/vod/detail/id/16130.html',
+ 'img': 'https://youku.youkuphoto.com/upload/vod/20230112-1/cea8c6fd8a0570d82c79f6ff4bbe4bbb.jpg',
+ 'latest': '7',
+ 'title': '大雪海的凯纳',
+ 'tp': '日韩',
+ 'weekday': '星期四',
+ 'year': '2023'}
+2023-02-28 21:06:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://yhdm6.top/>
+{'chapterHref': '/index.php/vod/detail/id/16246.html',
+ 'img': 'https://pic1.zykpic.com/upload/vod/2023-01-26/16747231491.jpg',
+ 'latest': '10',
+ 'title': '终末的女武神第二季',
+ 'tp': '日韩',
+ 'weekday': '星期四',
+ 'year': '2023'}
+2023-02-28 21:06:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://yhdm6.top/>
+{'chapterHref': '/index.php/vod/detail/id/15151.html',
+ 'img': 'https://pic.wujinpp.com/upload/vod/20230106-1/980a40da063256db004a28260fbe9439.jpg',
+ 'latest': '8',
+ 'title': '冰剑的魔术师将要统一世界',
+ 'tp': '日韩',
+ 'weekday': '星期五',
+ 'year': '2023'}
+2023-02-28 21:06:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://yhdm6.top/>
+{'chapterHref': '/index.php/vod/detail/id/15176.html',
+ 'img': 'https://pic.feisuimg.com/upload/vod/20230107-1/ccf3950c8bdcbd0c3990e806b68cdb0e.jpg',
+ 'latest': '8',
+ 'title': '异世界悠闲农家',
+ 'tp': '动画',
+ 'weekday': '星期五',
+ 'year': '2023'}
+2023-02-28 21:06:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://yhdm6.top/>
+{'chapterHref': '/index.php/vod/detail/id/15174.html',
+ 'img': 'https://pic.feisuimg.com/upload/vod/20230107-1/83474bca88593efa43791cb7c319c0b2.jpg',
+ 'latest': '8',
+ 'title': '英雄传说 闪之轨迹 北方战役',
+ 'tp': '动作',
+ 'weekday': '星期五',
+ 'year': '2023'}
+2023-02-28 21:06:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://yhdm6.top/>
+{'chapterHref': '/index.php/vod/detail/id/15175.html',
+ 'img': 'https://pic.feisuimg.com/upload/vod/20230107-1/daf83e0c16b63f6b6b27b39992dd876e.jpg',
+ 'latest': '8',
+ 'title': '银砂糖师与黑色妖精',
+ 'tp': '爱情',
+ 'weekday': '星期五',
+ 'year': '2023'}
+2023-02-28 21:06:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://yhdm6.top/>
+{'chapterHref': '/index.php/vod/detail/id/15210.html',
+ 'img': 'https://pic1.zykpic.com/upload/vod/2023-01-06/16730115871.jpg',
+ 'latest': '08',
+ 'title': 'Love Live！虹咲学园学园偶像同好会 四格漫',
+ 'tp': '日韩',
+ 'weekday': '星期五',
+ 'year': '2023'}
+2023-02-28 21:06:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://yhdm6.top/>
+{'chapterHref': '/index.php/vod/detail/id/16198.html',
+ 'img': 'https://pic1.zykpic.com/upload/vod/2023-01-19/16741176381.jpg',
+ 'latest': '12',
+ 'title': '伊藤润二狂热：日本恐怖故事',
+ 'tp': '剧情',
+ 'weekday': '星期五',
+ 'year': '2023'}
+2023-02-28 21:06:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://yhdm6.top/>
+{'chapterHref': '/index.php/vod/detail/id/16047.html',
+ 'img': 'https://pic.wujinpp.com/upload/vod/20230107-1/6ba0357e1b6a5e34c5c576fa0eddcb06.jpg',
+ 'latest': '8',
+ 'title': '傲娇恶役大小姐莉泽洛特与实况转播远藤君和解说员小林',
+ 'tp': '日韩',
+ 'weekday': '星期六',
+ 'year': '2023'}
+2023-02-28 21:06:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://yhdm6.top/>
+{'chapterHref': '/index.php/vod/detail/id/16061.html',
+ 'img': 'https://youku.youkuphoto.com/upload/vod/20230107-1/8bdb0a8c95f3bcd9cdb0976bcf9cf4b2.jpg',
+ 'latest': '8',
+ 'title': '关于邻家的天使大人不知不觉把我惯成了废人',
+ 'tp': '日韩',
+ 'weekday': '星期六',
+ 'year': '2023'}
+2023-02-28 21:06:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://yhdm6.top/>
+{'chapterHref': '/index.php/vod/detail/id/16085.html',
+ 'img': 'https://pic.huishij.com/upload/vod/20230108-1/950b84b6a953908dec2f1b4aa17ffb2f.jpg',
+ 'latest': '08',
+ 'title': '枪神 史丹比特',
+ 'tp': '日本',
+ 'weekday': '星期六',
+ 'year': '2023'}
+2023-02-28 21:06:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://yhdm6.top/>
+{'chapterHref': '/index.php/vod/detail/id/16060.html',
+ 'img': 'https://youku.youkuphoto.com/upload/vod/20230107-1/0922f9716f640f462626727cd0e1fb7d.jpg',
+ 'latest': '08',
+ 'title': '被解雇的暗黑士兵慢生活的第二人生',
+ 'tp': '动画',
+ 'weekday': '星期六',
+ 'year': '2023'}
+2023-02-28 21:06:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://yhdm6.top/>
+{'chapterHref': '/index.php/vod/detail/id/16167.html',
+ 'img': 'https://pic1.zykpic.com/upload/vod/2023-01-14/16737049401.jpg',
+ 'latest': '07',
+ 'title': '狩火之王',
+ 'tp': '冒险',
+ 'weekday': '星期六',
+ 'year': '2023'}
+2023-02-28 21:06:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://yhdm6.top/>
+{'chapterHref': '/index.php/vod/detail/id/111.html',
+ 'img': 'https://pic.huishij.com/upload/vod/20220313-1/1859ceebf31e2c9f44f8b384924b18fb.jpg',
+ 'latest': '1132',
+ 'title': '名侦探柯南日语',
+ 'tp': '日本',
+ 'weekday': '星期六',
+ 'year': '1996'}
+2023-02-28 21:06:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://yhdm6.top/>
+{'chapterHref': '/index.php/vod/detail/id/14692.html',
+ 'img': 'https://youku.youkuphoto.com/upload/vod/20221008-1/46d29c3426240694332dec2bfef4a9ab.jpg',
+ 'latest': '20',
+ 'title': '入间同学入魔了第三季',
+ 'tp': '日韩',
+ 'weekday': '星期六',
+ 'year': '2022'}
+2023-02-28 21:06:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://yhdm6.top/>
+{'chapterHref': '/index.php/vod/detail/id/15180.html',
+ 'img': 'https://pic.wujinpp.com/upload/vod/20230107-1/6d0aba905a5fc9c00341338fbb75d502.jpg',
+ 'latest': '08',
+ 'title': '爹地拍档',
+ 'tp': '日韩',
+ 'weekday': '星期六',
+ 'year': '2023'}
+2023-02-28 21:06:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://yhdm6.top/>
+{'chapterHref': '/index.php/vod/detail/id/9616.html',
+ 'img': 'https://pic.wujinpp.com/upload/vod/20210801-1/6cc25166bb84263c4509d64a76b0f539.jpg',
+ 'latest': '248',
+ 'title': '斗罗大陆',
+ 'tp': '国产',
+ 'weekday': '星期六',
+ 'year': '2018'}
+2023-02-28 21:06:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://yhdm6.top/>
+{'chapterHref': '/index.php/vod/detail/id/15181.html',
+ 'img': 'https://pic.wujinpp.com/upload/vod/20230107-1/f8220308fe1405f517391571d6288dc4.jpg',
+ 'latest': '08',
+ 'title': '阿鲁斯的巨兽',
+ 'tp': '日韩',
+ 'weekday': '星期六',
+ 'year': '2023'}
+2023-02-28 21:06:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://yhdm6.top/>
+{'chapterHref': '/index.php/vod/detail/id/16157.html',
+ 'img': 'https://pic.wujinpp.com/upload/vod/20230114-1/15f584b0c0ff4d2f26b6498bd4cb0f23.jpg',
+ 'latest': '07',
+ 'title': '真・进化之实',
+ 'tp': '日韩',
+ 'weekday': '星期六',
+ 'year': '2023'}
+2023-02-28 21:06:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://yhdm6.top/>
+{'chapterHref': '/index.php/vod/detail/id/16160.html',
+ 'img': 'https://pic.feisuimg.com/upload/vod/20230114-1/c429dd056502a3c50838e0e093828a10.jpg',
+ 'latest': '02',
+ 'title': '卡片战斗先导者 overDress 第二季',
+ 'tp': '动画',
+ 'weekday': '星期六',
+ 'year': '2023'}
+2023-02-28 21:06:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://yhdm6.top/>
+{'chapterHref': '/index.php/vod/detail/id/16106.html',
+ 'img': 'https://pic.wujinpp.com/upload/vod/20230110-1/aeaa97876d20db4da649d0b6eb317b5e.jpg',
+ 'latest': '08',
+ 'title': '万事屋斋藤到异世界',
+ 'tp': '日韩',
+ 'weekday': '星期日',
+ 'year': '2023'}
+2023-02-28 21:06:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://yhdm6.top/>
+{'chapterHref': '/index.php/vod/detail/id/16092.html',
+ 'img': 'https://pic1.zykpic.com/upload/vod/2023-01-09/16732247191.jpg',
+ 'latest': '08',
+ 'title': 'D4DJ All Mix',
+ 'tp': '日韩',
+ 'weekday': '星期日',
+ 'year': '2023'}
+2023-02-28 21:06:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://yhdm6.top/>
+{'chapterHref': '/index.php/vod/detail/id/16088.html',
+ 'img': 'https://pic.huishij.com/upload/vod/20230108-1/188af09f90ddb43272d882ed83709e9b.jpg',
+ 'latest': '8',
+ 'title': '东京复仇者 圣夜决战篇',
+ 'tp': '日本',
+ 'weekday': '星期日',
+ 'year': '2023'}
+2023-02-28 21:06:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://yhdm6.top/>
+{'chapterHref': '/index.php/vod/detail/id/16078.html',
+ 'img': 'https://youku.youkuphoto.com/upload/vod/20230108-1/0429c0e7d82357ce91f688985d4549c2.jpg',
+ 'latest': '8',
+ 'title': '为了养老金，去异界存八万金',
+ 'tp': '日韩',
+ 'weekday': '星期日',
+ 'year': '2023'}
+2023-02-28 21:06:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://yhdm6.top/>
+{'chapterHref': '/index.php/vod/detail/id/16091.html',
+ 'img': 'https://pic.feisuimg.com/upload/vod/20230108-1/c762120546ca4f9eaa94480709b860be.jpg',
+ 'latest': '08',
+ 'title': '被众神捡到的男孩第二季',
+ 'tp': '动画',
+ 'weekday': '星期日',
+ 'year': '2023'}
+2023-02-28 21:06:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://yhdm6.top/>
+{'chapterHref': '/index.php/vod/detail/id/16090.html',
+ 'img': 'https://pic1.zykpic.com/upload/vod/2023-01-08/16731924581.jpg',
+ 'latest': '08',
+ 'title': '虚构推理第二季',
+ 'tp': '剧情',
+ 'weekday': '星期日',
+ 'year': '2023'}
+2023-02-28 21:06:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://yhdm6.top/>
+{'chapterHref': '/index.php/vod/detail/id/9660.html',
+ 'img': 'https://pic.feisuimg.com/upload/vod/20220220-1/928e05f97512ce08f286ee2c54e3be7f.jpg',
+ 'latest': '289',
+ 'title': '火影忍者：博人传之次世代继承者',
+ 'tp': '日韩',
+ 'weekday': '星期日',
+ 'year': '2017'}
+2023-02-28 21:06:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://yhdm6.top/>
+{'chapterHref': '/index.php/vod/detail/id/16074.html',
+ 'img': 'https://pic1.zykpic.com/upload/vod/2023-01-08/16731101811.jpg',
+ 'latest': '05',
+ 'title': '尼尔：机械纪元动画版',
+ 'tp': '科幻',
+ 'weekday': '星期日',
+ 'year': '2023'}
+2023-02-28 21:06:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://yhdm6.top/>
+{'chapterHref': '/index.php/vod/detail/id/16075.html',
+ 'img': 'https://pic.wujinpp.com/upload/vod/20230108-1/2210c3a1604718d4580e0aac84ee278e.jpg',
+ 'latest': '09',
+ 'title': '不要欺负我，长瀞同学第二季',
+ 'tp': '日韩',
+ 'weekday': '星期日',
+ 'year': '2023'}
+2023-02-28 21:06:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://yhdm6.top/>
+{'chapterHref': '/index.php/vod/detail/id/16077.html',
+ 'img': 'https://youku.youkuphoto.com/upload/vod/20230108-1/30abb383d0467b0de2540e0f329a0e4c.jpg',
+ 'latest': '08',
+ 'title': '最强阴阳师的异世界转生记',
+ 'tp': '日韩',
+ 'weekday': '星期日',
+ 'year': '2023'}
+2023-02-28 21:06:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://yhdm6.top/>
+{'chapterHref': '/index.php/vod/detail/id/14694.html',
+ 'img': 'https://pic.wujinpp.com/upload/vod/20221009-1/d4ac5d2a2747509779f4553e22eff760.jpg',
+ 'latest': '20',
+ 'title': '蓝色监狱',
+ 'tp': '日韩',
+ 'weekday': '星期日',
+ 'year': '2022'}
+2023-02-28 21:06:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://yhdm6.top/>
+{'chapterHref': '/index.php/vod/detail/id/16076.html',
+ 'img': 'https://pic.wujinpp.com/upload/vod/20230108-1/ec43b56d4f51be98d90425a8656c97bb.jpg',
+ 'latest': '06',
+ 'title': '魔王学院的不适合者第二季',
+ 'tp': '日韩',
+ 'weekday': '星期日',
+ 'year': '2023'}
+2023-02-28 21:06:06 [scrapy.core.engine] INFO: Closing spider (finished)
+2023-02-28 21:06:06 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 344,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 36052,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'elapsed_time_seconds': 4.002202,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2023, 2, 28, 13, 6, 6, 472139),
+ 'httpcompression/response_bytes': 191515,
+ 'httpcompression/response_count': 1,
+ 'item_scraped_count': 54,
+ 'log_count/DEBUG': 58,
+ 'log_count/INFO': 10,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2023, 2, 28, 13, 6, 2, 469937)}
+2023-02-28 21:06:06 [scrapy.core.engine] INFO: Spider closed (finished)
+2023-02-28 21:14:03 [scrapy.utils.log] INFO: Scrapy 2.7.1 started (bot: ACG)
+2023-02-28 21:14:03 [scrapy.utils.log] INFO: Versions: lxml 4.9.2.0, libxml2 2.9.12, cssselect 1.2.0, parsel 1.7.0, w3lib 2.1.1, Twisted 22.10.0, Python 3.9.6 (tags/v3.9.6:db3ff76, Jun 28 2021, 15:26:21) [MSC v.1929 64 bit (AMD64)], pyOpenSSL 22.0.0 (OpenSSL 1.1.1n  15 Mar 2022), cryptography 36.0.2, Platform Windows-10-10.0.22621-SP0
+2023-02-28 21:14:56 [scrapy.utils.log] INFO: Scrapy 2.7.1 started (bot: ACG)
+2023-02-28 21:14:56 [scrapy.utils.log] INFO: Versions: lxml 4.9.2.0, libxml2 2.9.12, cssselect 1.2.0, parsel 1.7.0, w3lib 2.1.1, Twisted 22.10.0, Python 3.9.6 (tags/v3.9.6:db3ff76, Jun 28 2021, 15:26:21) [MSC v.1929 64 bit (AMD64)], pyOpenSSL 22.0.0 (OpenSSL 1.1.1n  15 Mar 2022), cryptography 36.0.2, Platform Windows-10-10.0.22621-SP0
+2023-02-28 21:14:56 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'ACG',
+ 'DUPEFILTER_CLASS': 'scrapy.dupefilters.BaseDupeFilter',
+ 'LOGSTATS_INTERVAL': 0,
+ 'LOG_FILE': 'log/scrapy_2023_2_28.log',
+ 'NEWSPIDER_MODULE': 'ACG.spiders',
+ 'REQUEST_FINGERPRINTER_IMPLEMENTATION': '2.7',
+ 'SPIDER_MODULES': ['ACG.spiders'],
+ 'TWISTED_REACTOR': 'twisted.internet.asyncioreactor.AsyncioSelectorReactor'}
+2023-02-28 21:14:56 [asyncio] DEBUG: Using selector: SelectSelector
+2023-02-28 21:14:56 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+2023-02-28 21:14:56 [scrapy.utils.log] DEBUG: Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
+2023-02-28 21:14:56 [scrapy.extensions.telnet] INFO: Telnet Password: 78d979829fdfdc62
+2023-02-28 21:14:56 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole']
+2023-02-28 21:14:57 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['ACG.middlewares.DelayedRequestsMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2023-02-28 21:14:57 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2023-02-28 21:14:57 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2023-02-28 21:14:57 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2023-02-28 21:14:57 [scrapy.core.engine] INFO: Spider opened
+2023-02-28 21:14:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://yhdm6.top/index.php/vod/detail/id/14711.html> (referer: None)
+2023-02-28 21:14:58 [scrapy.core.scraper] ERROR: Spider error processing <GET https://yhdm6.top/index.php/vod/detail/id/14711.html> (referer: None)
+Traceback (most recent call last):
+  File "D:\Python\lib\site-packages\twisted\internet\defer.py", line 892, in _runCallbacks
+    current.result = callback(  # type: ignore[misc]
+  File "D:\Python\lib\site-packages\scrapy\utils\defer.py", line 285, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "D:\Python\lib\site-packages\scrapy\utils\defer.py", line 272, in deferred_from_coro
+    event_loop = get_asyncio_event_loop_policy().get_event_loop()
+  File "D:\Python\lib\asyncio\events.py", line 642, in get_event_loop
+    raise RuntimeError('There is no current event loop in thread %r.'
+RuntimeError: There is no current event loop in thread 'Thread-1'.
+2023-02-28 21:14:58 [py.warnings] WARNING: D:\Python\lib\site-packages\twisted\internet\defer.py:892: RuntimeWarning: coroutine 'SpiderMiddlewareManager.scrape_response.<locals>.process_callback_output' was never awaited
+  current.result = callback(  # type: ignore[misc]
+
+2023-02-28 21:14:58 [asyncio] DEBUG: Using selector: SelectSelector
+2023-02-28 22:18:05 [scrapy.utils.log] INFO: Scrapy 2.7.1 started (bot: ACG)
+2023-02-28 22:18:05 [scrapy.utils.log] INFO: Versions: lxml 4.9.2.0, libxml2 2.9.12, cssselect 1.2.0, parsel 1.7.0, w3lib 2.1.1, Twisted 22.10.0, Python 3.9.6 (tags/v3.9.6:db3ff76, Jun 28 2021, 15:26:21) [MSC v.1929 64 bit (AMD64)], pyOpenSSL 22.0.0 (OpenSSL 1.1.1n  15 Mar 2022), cryptography 36.0.2, Platform Windows-10-10.0.22621-SP0
+2023-02-28 22:18:05 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'ACG',
+ 'DUPEFILTER_CLASS': 'scrapy.dupefilters.BaseDupeFilter',
+ 'LOGSTATS_INTERVAL': 0,
+ 'LOG_FILE': 'log/scrapy_2023_2_28.log',
+ 'NEWSPIDER_MODULE': 'ACG.spiders',
+ 'REQUEST_FINGERPRINTER_IMPLEMENTATION': '2.7',
+ 'SPIDER_MODULES': ['ACG.spiders'],
+ 'TWISTED_REACTOR': 'twisted.internet.asyncioreactor.AsyncioSelectorReactor'}
+2023-02-28 22:18:05 [asyncio] DEBUG: Using selector: SelectSelector
+2023-02-28 22:18:05 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+2023-02-28 22:18:05 [scrapy.utils.log] DEBUG: Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
+2023-02-28 22:18:05 [scrapy.extensions.telnet] INFO: Telnet Password: 68ec8e2bdad7a97f
+2023-02-28 22:18:05 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole']
+2023-02-28 22:18:06 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['ACG.middlewares.DelayedRequestsMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2023-02-28 22:18:06 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2023-02-28 22:18:06 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2023-02-28 22:18:06 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2023-02-28 22:18:06 [scrapy.core.engine] INFO: Spider opened
+2023-02-28 22:18:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://yhdm6.top/index.php/vod/play/id/14711/sid/4/nid/1.html> (referer: None)
+2023-02-28 22:18:07 [scrapy.core.scraper] ERROR: Spider error processing <GET https://yhdm6.top/index.php/vod/play/id/14711/sid/4/nid/1.html> (referer: None)
+Traceback (most recent call last):
+  File "D:\Python\lib\site-packages\twisted\internet\defer.py", line 892, in _runCallbacks
+    current.result = callback(  # type: ignore[misc]
+  File "D:\Python\lib\site-packages\scrapy\utils\defer.py", line 285, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "D:\Python\lib\site-packages\scrapy\utils\defer.py", line 272, in deferred_from_coro
+    event_loop = get_asyncio_event_loop_policy().get_event_loop()
+  File "D:\Python\lib\asyncio\events.py", line 642, in get_event_loop
+    raise RuntimeError('There is no current event loop in thread %r.'
+RuntimeError: There is no current event loop in thread 'Thread-1'.
+2023-02-28 22:18:07 [py.warnings] WARNING: D:\Python\lib\site-packages\twisted\internet\defer.py:892: RuntimeWarning: coroutine 'SpiderMiddlewareManager.scrape_response.<locals>.process_callback_output' was never awaited
+  current.result = callback(  # type: ignore[misc]
+
+2023-02-28 22:18:07 [asyncio] DEBUG: Using selector: SelectSelector
+2023-02-28 22:51:27 [scrapy.utils.log] INFO: Scrapy 2.7.1 started (bot: ACG)
+2023-02-28 22:51:27 [scrapy.utils.log] INFO: Versions: lxml 4.9.2.0, libxml2 2.9.12, cssselect 1.2.0, parsel 1.7.0, w3lib 2.1.1, Twisted 22.10.0, Python 3.9.6 (tags/v3.9.6:db3ff76, Jun 28 2021, 15:26:21) [MSC v.1929 64 bit (AMD64)], pyOpenSSL 22.0.0 (OpenSSL 1.1.1n  15 Mar 2022), cryptography 36.0.2, Platform Windows-10-10.0.22621-SP0
+2023-02-28 22:51:27 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'ACG',
+ 'DUPEFILTER_CLASS': 'scrapy.dupefilters.BaseDupeFilter',
+ 'LOGSTATS_INTERVAL': 0,
+ 'LOG_FILE': 'log/scrapy_2023_2_28.log',
+ 'NEWSPIDER_MODULE': 'ACG.spiders',
+ 'REQUEST_FINGERPRINTER_IMPLEMENTATION': '2.7',
+ 'SPIDER_MODULES': ['ACG.spiders'],
+ 'TWISTED_REACTOR': 'twisted.internet.asyncioreactor.AsyncioSelectorReactor'}
+2023-02-28 22:51:27 [asyncio] DEBUG: Using selector: SelectSelector
+2023-02-28 22:51:27 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+2023-02-28 22:51:27 [scrapy.utils.log] DEBUG: Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
+2023-02-28 22:51:27 [scrapy.extensions.telnet] INFO: Telnet Password: 8b16c830db27eaf2
+2023-02-28 22:51:27 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole']
+2023-02-28 22:51:27 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['ACG.middlewares.DelayedRequestsMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2023-02-28 22:51:27 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2023-02-28 22:51:27 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2023-02-28 22:51:27 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2023-02-28 22:51:27 [scrapy.core.engine] INFO: Spider opened
+2023-02-28 22:51:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://new.wanhuatongb2b.net/20221010/tSj8M3iP/index.m3u8> (referer: None)
+2023-02-28 22:51:29 [scrapy.core.scraper] ERROR: Spider error processing <GET https://new.wanhuatongb2b.net/20221010/tSj8M3iP/index.m3u8> (referer: None)
+Traceback (most recent call last):
+  File "D:\Python\lib\site-packages\twisted\internet\defer.py", line 892, in _runCallbacks
+    current.result = callback(  # type: ignore[misc]
+  File "D:\Python\lib\site-packages\scrapy\utils\defer.py", line 285, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "D:\Python\lib\site-packages\scrapy\utils\defer.py", line 272, in deferred_from_coro
+    event_loop = get_asyncio_event_loop_policy().get_event_loop()
+  File "D:\Python\lib\asyncio\events.py", line 642, in get_event_loop
+    raise RuntimeError('There is no current event loop in thread %r.'
+RuntimeError: There is no current event loop in thread 'Thread-1'.
+2023-02-28 22:51:29 [py.warnings] WARNING: D:\Python\lib\site-packages\twisted\internet\defer.py:892: RuntimeWarning: coroutine 'SpiderMiddlewareManager.scrape_response.<locals>.process_callback_output' was never awaited
+  current.result = callback(  # type: ignore[misc]
+
+2023-02-28 22:51:29 [asyncio] DEBUG: Using selector: SelectSelector

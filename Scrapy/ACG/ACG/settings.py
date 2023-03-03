@@ -18,8 +18,8 @@ log_file_path = 'log/scrapy_{}_{}_{}.log'.format(to_day.year, to_day.month, to_d
 LOG_FILE = log_file_path
 
 
-LOGIN_USERNAME='xyi@ucsb.edu'
-LOGIN_PASSWORD='Lucky@2019yx'
+LOGIN_USERNAME='username'
+LOGIN_PASSWORD='password'
 
 VERSION='756be60366a5fe018a9a6dad3939c8a57e00ec57'
 
@@ -27,7 +27,7 @@ HTTPERROR_ALLOWED_CODES = [404]
 #--------------------------------------MySQL Info-----------------------------------------
 MYSQL_HOST='127.0.0.1'
 MYSQL_USER='root'
-MYSQL_PASSWORD='Lucky@2019yx'
+MYSQL_PASSWORD='password'
 MYSQL_DATABASE='acg'
 MYSQL_TABLE={'TIMECHART':'timechart','ANIMAINFO':'anima_info','VIDEOSOURCE':'video_source'}
 MYSQL_PORT=3306

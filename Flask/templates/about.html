@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Personal Website - About</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='/css/global.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='/css/about.css') }}">
+</head>
+<body>
+    <header>
+        <div class="banner">
+            <h1><a href="/">闲散小站</a></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/projects">Projects</a></li>
+                <li><a href="/knowledge">Knowledge</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2 class="section-title">关于我</h2>
+            <div id="about-me-content" class="section-content"></div>
+        </section>
+        <section>
+            <h2 class="section-title"> 简历</h2>
+            <div class="section-content">
+                <p><a href="{{ url_for('static', filename='/file/resume_en.pdf') }}">Download my resume in EN</a></p>
+                <p><a href="{{ url_for('static', filename='/file/resume_cn.pdf') }}">下载我的中文简历</a></p>
+            </div>
+        </section>
+        <section>
+            <h2 class="section-title">记录</h2>
+            <div class="section-content">
+                <p>Here are some of my diary entries:</p>
+                <ul>
+                    <li><a href="#">Entry 1</a></li>
+                    <li><a href="#">Entry 2</a></li>
+                    <li><a href="#">Entry 3</a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <script>
+        // 加载个人介绍
+        fetch("{{ url_for('static', filename='/file/about.txt') }}")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("about-me-content").innerHTML = data;
+            });
+    </script>
+</body>
+</html>

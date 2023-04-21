@@ -1,0 +1,403 @@
+
+2023-03-07 23:00:10 [scrapy.utils.log] INFO: Scrapy 2.7.1 started (bot: ip_pool)
+2023-03-07 23:00:10 [scrapy.utils.log] INFO: Versions: lxml 4.9.2.0, libxml2 2.9.12, cssselect 1.2.0, parsel 1.7.0, w3lib 2.1.1, Twisted 22.10.0, Python 3.9.6 (tags/v3.9.6:db3ff76, Jun 28 2021, 15:26:21) [MSC v.1929 64 bit (AMD64)], pyOpenSSL 22.0.0 (OpenSSL 1.1.1n  15 Mar 2022), cryptography 36.0.2, Platform Windows-10-10.0.22621-SP0
+2023-03-07 23:00:10 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'ip_pool',
+ 'LOG_FILE': 'log/scrapy_2023_3_7.log',
+ 'NEWSPIDER_MODULE': 'ip_pool.spiders',
+ 'REQUEST_FINGERPRINTER_IMPLEMENTATION': '2.7',
+ 'SPIDER_MODULES': ['ip_pool.spiders'],
+ 'TWISTED_REACTOR': 'twisted.internet.asyncioreactor.AsyncioSelectorReactor',
+ 'USER_AGENT': 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like '
+               'Gecko) Chrome/41.0.2228.0 Safari/537.36'}
+2023-03-07 23:00:10 [asyncio] DEBUG: Using selector: SelectSelector
+2023-03-07 23:00:10 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+2023-03-07 23:00:10 [scrapy.utils.log] DEBUG: Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
+2023-03-07 23:00:10 [scrapy.extensions.telnet] INFO: Telnet Password: 4cb4df9693d66b8f
+2023-03-07 23:00:10 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2023-03-07 23:00:11 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2023-03-07 23:00:11 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2023-03-07 23:00:11 [scrapy.middleware] INFO: Enabled item pipelines:
+['ip_pool.pipelines.FilterPipeline',
+ 'ip_pool.pipelines.ValidationPipeline',
+ 'ip_pool.pipelines.MySQLPipeline']
+2023-03-07 23:00:11 [scrapy.core.engine] INFO: Spider opened
+2023-03-07 23:00:11 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2023-03-07 23:00:11 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2023-03-07 23:00:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ip3366.net/> (referer: None)
+2023-03-07 23:00:11 [scrapy.core.scraper] WARNING: Dropped: 
+{'ip': '183.232.186.198', 'port': '80', 'http_status': False, 'http_speed': None, 'https_status': False, 'https_speed': None, 'hidden_id': None, 'vpn': False}
+2023-03-07 23:00:14 [scrapy.core.scraper] WARNING: Dropped: 
+{'ip': '180.112.212.16', 'port': '5481', 'http_status': False, 'http_speed': None, 'https_status': False, 'https_speed': None, 'hidden_id': None, 'vpn': False}
+2023-03-07 23:00:14 [scrapy.core.scraper] WARNING: Dropped: 
+{'ip': '183.232.186.85', 'port': '80', 'http_status': False, 'http_speed': None, 'https_status': False, 'https_speed': None, 'hidden_id': None, 'vpn': False}
+2023-03-07 23:00:16 [scrapy.core.scraper] WARNING: Dropped: 
+{'ip': '27.192.172.79', 'port': '9000', 'http_status': False, 'http_speed': None, 'https_status': False, 'https_speed': None, 'hidden_id': None, 'vpn': False}
+2023-03-07 23:00:19 [scrapy.core.scraper] WARNING: Dropped: 
+{'ip': '45.8.104.40', 'port': '80', 'http_status': False, 'http_speed': None, 'https_status': False, 'https_speed': None, 'hidden_id': None, 'vpn': False}
+2023-03-07 23:00:25 [scrapy.core.scraper] WARNING: Dropped: 
+{'ip': '43.251.119.239', 'port': '45787', 'http_status': False, 'http_speed': None, 'https_status': False, 'https_speed': None, 'hidden_id': None, 'vpn': False}
+2023-03-07 23:00:25 [asyncio] ERROR: Unclosed connection
+client_connection: Connection<ConnectionKey(host='httpbin.org', port=80, is_ssl=False, ssl=None, proxy=URL('http://45.8.104.40:80'), proxy_auth=None, proxy_headers_hash=None)>
+2023-03-07 23:00:27 [scrapy.core.scraper] WARNING: Dropped: 
+{'ip': '180.112.133.70', 'port': '5481', 'http_status': False, 'http_speed': None, 'https_status': False, 'https_speed': None, 'hidden_id': None, 'vpn': False}
+2023-03-07 23:00:33 [scrapy.core.scraper] WARNING: Dropped: 
+{'ip': '221.231.32.79', 'port': '9002', 'http_status': False, 'http_speed': None, 'https_status': False, 'https_speed': None, 'hidden_id': None, 'vpn': False}
+2023-03-07 23:00:39 [scrapy.core.scraper] WARNING: Dropped: 
+{'ip': '94.102.224.179', 'port': '32650', 'http_status': False, 'http_speed': None, 'https_status': False, 'https_speed': None, 'hidden_id': None, 'vpn': False}
+2023-03-07 23:00:44 [scrapy.core.scraper] WARNING: Dropped: 
+{'ip': '221.239.179.28', 'port': '8001', 'http_status': False, 'http_speed': None, 'https_status': False, 'https_speed': None, 'hidden_id': None, 'vpn': False}
+2023-03-07 23:00:44 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.ip3366.net': <GET http://www.ip3366.net/?stype=1&page=2>
+2023-03-07 23:00:44 [scrapy.core.engine] INFO: Closing spider (finished)
+2023-03-07 23:00:44 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 280,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 6551,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'elapsed_time_seconds': 32.84381,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2023, 3, 7, 15, 0, 44, 143599),
+ 'httpcompression/response_bytes': 15364,
+ 'httpcompression/response_count': 1,
+ 'item_dropped_count': 10,
+ 'item_dropped_reasons_count/DropItem': 10,
+ 'log_count/DEBUG': 5,
+ 'log_count/ERROR': 1,
+ 'log_count/INFO': 10,
+ 'log_count/WARNING': 10,
+ 'offsite/domains': 1,
+ 'offsite/filtered': 1,
+ 'request_depth_max': 1,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2023, 3, 7, 15, 0, 11, 299789)}
+2023-03-07 23:00:44 [scrapy.core.engine] INFO: Spider closed (finished)
+2023-03-07 23:01:45 [scrapy.utils.log] INFO: Scrapy 2.7.1 started (bot: ip_pool)
+2023-03-07 23:01:45 [scrapy.utils.log] INFO: Versions: lxml 4.9.2.0, libxml2 2.9.12, cssselect 1.2.0, parsel 1.7.0, w3lib 2.1.1, Twisted 22.10.0, Python 3.9.6 (tags/v3.9.6:db3ff76, Jun 28 2021, 15:26:21) [MSC v.1929 64 bit (AMD64)], pyOpenSSL 22.0.0 (OpenSSL 1.1.1n  15 Mar 2022), cryptography 36.0.2, Platform Windows-10-10.0.22621-SP0
+2023-03-07 23:01:45 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'ip_pool',
+ 'LOG_FILE': 'log/scrapy_2023_3_7.log',
+ 'NEWSPIDER_MODULE': 'ip_pool.spiders',
+ 'REQUEST_FINGERPRINTER_IMPLEMENTATION': '2.7',
+ 'SPIDER_MODULES': ['ip_pool.spiders'],
+ 'TWISTED_REACTOR': 'twisted.internet.asyncioreactor.AsyncioSelectorReactor',
+ 'USER_AGENT': 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like '
+               'Gecko) Chrome/41.0.2228.0 Safari/537.36'}
+2023-03-07 23:01:45 [asyncio] DEBUG: Using selector: SelectSelector
+2023-03-07 23:01:45 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+2023-03-07 23:01:45 [scrapy.utils.log] DEBUG: Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
+2023-03-07 23:01:45 [scrapy.extensions.telnet] INFO: Telnet Password: 6551a9389d9f0266
+2023-03-07 23:01:45 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2023-03-07 23:01:45 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2023-03-07 23:01:45 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2023-03-07 23:01:45 [scrapy.middleware] INFO: Enabled item pipelines:
+['ip_pool.pipelines.FilterPipeline',
+ 'ip_pool.pipelines.ValidationPipeline',
+ 'ip_pool.pipelines.MySQLPipeline']
+2023-03-07 23:01:45 [scrapy.core.engine] INFO: Spider opened
+2023-03-07 23:01:45 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2023-03-07 23:01:45 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2023-03-07 23:01:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ip3366.net/> (referer: None)
+2023-03-07 23:01:46 [scrapy.core.scraper] WARNING: Dropped: 
+{'ip': '183.232.186.198', 'port': '80', 'http_status': False, 'http_speed': None, 'https_status': False, 'https_speed': None, 'hidden_id': None, 'vpn': False}
+2023-03-07 23:01:52 [scrapy.core.scraper] WARNING: Dropped: 
+{'ip': '180.112.212.16', 'port': '5481', 'http_status': False, 'http_speed': None, 'https_status': False, 'https_speed': None, 'hidden_id': None, 'vpn': False}
+2023-03-07 23:01:52 [scrapy.core.scraper] WARNING: Dropped: 
+{'ip': '183.232.186.85', 'port': '80', 'http_status': False, 'http_speed': None, 'https_status': False, 'https_speed': None, 'hidden_id': None, 'vpn': False}
+2023-03-07 23:01:54 [scrapy.core.scraper] WARNING: Dropped: 
+{'ip': '27.192.172.79', 'port': '9000', 'http_status': False, 'http_speed': None, 'https_status': False, 'https_speed': None, 'hidden_id': None, 'vpn': False}
+2023-03-07 23:01:55 [scrapy.core.scraper] WARNING: Dropped: 
+{'ip': '45.8.104.40', 'port': '80', 'http_status': False, 'http_speed': None, 'https_status': False, 'https_speed': None, 'hidden_id': None, 'vpn': False}
+2023-03-07 23:01:55 [asyncio] ERROR: Unclosed connection
+client_connection: Connection<ConnectionKey(host='httpbin.org', port=80, is_ssl=False, ssl=None, proxy=URL('http://45.8.104.40:80'), proxy_auth=None, proxy_headers_hash=None)>
+2023-03-07 23:02:01 [scrapy.core.scraper] WARNING: Dropped: 
+{'ip': '43.251.119.239', 'port': '45787', 'http_status': False, 'http_speed': None, 'https_status': False, 'https_speed': None, 'hidden_id': None, 'vpn': False}
+2023-03-07 23:02:07 [scrapy.core.scraper] WARNING: Dropped: 
+{'ip': '180.112.133.70', 'port': '5481', 'http_status': False, 'http_speed': None, 'https_status': False, 'https_speed': None, 'hidden_id': None, 'vpn': False}
+2023-03-07 23:02:13 [scrapy.core.scraper] WARNING: Dropped: 
+{'ip': '221.231.32.79', 'port': '9002', 'http_status': False, 'http_speed': None, 'https_status': False, 'https_speed': None, 'hidden_id': None, 'vpn': False}
+2023-03-07 23:02:18 [scrapy.core.scraper] WARNING: Dropped: 
+{'ip': '94.102.224.179', 'port': '32650', 'http_status': False, 'http_speed': None, 'https_status': False, 'https_speed': None, 'hidden_id': None, 'vpn': False}
+2023-03-07 23:02:24 [scrapy.core.scraper] WARNING: Dropped: 
+{'ip': '221.239.179.28', 'port': '8001', 'http_status': False, 'http_speed': None, 'https_status': False, 'https_speed': None, 'hidden_id': None, 'vpn': False}
+2023-03-07 23:02:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ip3366.net/?stype=1&page=2> (referer: http://www.ip3366.net/)
+2023-03-07 23:02:30 [scrapy.core.scraper] WARNING: Dropped: 
+{'ip': '94.102.228.99', 'port': '32650', 'http_status': False, 'http_speed': None, 'https_status': False, 'https_speed': None, 'hidden_id': None, 'vpn': False}
+2023-03-07 23:02:32 [scrapy.core.scraper] WARNING: Dropped: 
+{'ip': '47.242.126.227', 'port': '8001', 'http_status': False, 'http_speed': None, 'https_status': False, 'https_speed': None, 'hidden_id': None, 'vpn': False}
+2023-03-07 23:02:38 [scrapy.core.scraper] WARNING: Dropped: 
+{'ip': '222.128.182.58', 'port': '8000', 'http_status': False, 'http_speed': None, 'https_status': False, 'https_speed': None, 'hidden_id': None, 'vpn': False}
+2023-03-07 23:02:44 [scrapy.core.scraper] WARNING: Dropped: 
+{'ip': '222.190.173.59', 'port': '8089', 'http_status': False, 'http_speed': None, 'https_status': False, 'https_speed': None, 'hidden_id': None, 'vpn': False}
+2023-03-07 23:02:50 [scrapy.core.scraper] WARNING: Dropped: 
+{'ip': '222.190.173.48', 'port': '8089', 'http_status': False, 'http_speed': None, 'https_status': False, 'https_speed': None, 'hidden_id': None, 'vpn': False}
+2023-03-07 23:02:50 [scrapy.extensions.logstats] INFO: Crawled 2 pages (at 2 pages/min), scraped 0 items (at 0 items/min)
+2023-03-07 23:02:56 [scrapy.core.scraper] WARNING: Dropped: 
+{'ip': '61.224.214.73', 'port': '80', 'http_status': False, 'http_speed': None, 'https_status': False, 'https_speed': None, 'hidden_id': None, 'vpn': False}
+2023-03-07 23:03:01 [scrapy.core.scraper] WARNING: Dropped: 
+{'ip': '43.251.118.114', 'port': '45787', 'http_status': False, 'http_speed': None, 'https_status': False, 'https_speed': None, 'hidden_id': None, 'vpn': False}
+2023-03-07 23:03:07 [scrapy.core.scraper] WARNING: Dropped: 
+{'ip': '43.251.119.173', 'port': '45787', 'http_status': False, 'http_speed': None, 'https_status': False, 'https_speed': None, 'hidden_id': None, 'vpn': False}
+2023-03-07 23:03:13 [scrapy.core.scraper] WARNING: Dropped: 
+{'ip': '43.251.119.213', 'port': '45787', 'http_status': False, 'http_speed': None, 'https_status': False, 'https_speed': None, 'hidden_id': None, 'vpn': False}
+2023-03-07 23:03:19 [scrapy.core.scraper] WARNING: Dropped: 
+{'ip': '43.251.119.79', 'port': '45787', 'http_status': False, 'http_speed': None, 'https_status': False, 'https_speed': None, 'hidden_id': None, 'vpn': False}
+2023-03-07 23:03:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ip3366.net/?stype=1&page=3> (referer: http://www.ip3366.net/?stype=1&page=2)
+2023-03-07 23:03:21 [scrapy.core.scraper] WARNING: Dropped: 
+{'ip': '39.101.65.228', 'port': '80', 'http_status': False, 'http_speed': None, 'https_status': False, 'https_speed': None, 'hidden_id': None, 'vpn': False}
+2023-03-07 23:03:27 [scrapy.core.scraper] WARNING: Dropped: 
+{'ip': '180.112.215.117', 'port': '5481', 'http_status': False, 'http_speed': None, 'https_status': False, 'https_speed': None, 'hidden_id': None, 'vpn': False}
+2023-03-07 23:03:33 [scrapy.core.scraper] WARNING: Dropped: 
+{'ip': '43.251.118.95', 'port': '45787', 'http_status': False, 'http_speed': None, 'https_status': False, 'https_speed': None, 'hidden_id': None, 'vpn': False}
+2023-03-07 23:03:39 [scrapy.core.scraper] WARNING: Dropped: 
+{'ip': '27.208.136.132', 'port': '8060', 'http_status': False, 'http_speed': None, 'https_status': False, 'https_speed': None, 'hidden_id': None, 'vpn': False}
+2023-03-07 23:03:44 [scrapy.core.scraper] WARNING: Dropped: 
+{'ip': '43.251.119.197', 'port': '45787', 'http_status': False, 'http_speed': None, 'https_status': False, 'https_speed': None, 'hidden_id': None, 'vpn': False}
+2023-03-07 23:03:45 [scrapy.extensions.logstats] INFO: Crawled 3 pages (at 1 pages/min), scraped 0 items (at 0 items/min)
+2023-03-07 23:03:50 [scrapy.core.scraper] WARNING: Dropped: 
+{'ip': '222.208.65.246', 'port': '9000', 'http_status': False, 'http_speed': None, 'https_status': False, 'https_speed': None, 'hidden_id': None, 'vpn': False}
+2023-03-07 23:03:56 [scrapy.core.scraper] WARNING: Dropped: 
+{'ip': '94.102.234.186', 'port': '32650', 'http_status': False, 'http_speed': None, 'https_status': False, 'https_speed': None, 'hidden_id': None, 'vpn': False}
+2023-03-07 23:04:02 [scrapy.core.scraper] WARNING: Dropped: 
+{'ip': '8.219.115.145', 'port': '3128', 'http_status': False, 'http_speed': None, 'https_status': False, 'https_speed': None, 'hidden_id': None, 'vpn': False}
+2023-03-07 23:04:08 [scrapy.core.scraper] WARNING: Dropped: 
+{'ip': '27.192.203.26', 'port': '9000', 'http_status': False, 'http_speed': None, 'https_status': False, 'https_speed': None, 'hidden_id': None, 'vpn': False}
+2023-03-07 23:04:14 [scrapy.core.scraper] WARNING: Dropped: 
+{'ip': '49.72.46.211', 'port': '3128', 'http_status': False, 'http_speed': None, 'https_status': False, 'https_speed': None, 'hidden_id': None, 'vpn': False}
+2023-03-07 23:04:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ip3366.net/?stype=1&page=4> (referer: http://www.ip3366.net/?stype=1&page=3)
+2023-03-07 23:04:20 [scrapy.core.scraper] WARNING: Dropped: 
+{'ip': '47.109.30.37', 'port': '4443', 'http_status': False, 'http_speed': None, 'https_status': False, 'https_speed': None, 'hidden_id': None, 'vpn': False}
+2023-03-07 23:04:25 [scrapy.core.scraper] WARNING: Dropped: 
+{'ip': '183.138.22.103', 'port': '8085', 'http_status': False, 'http_speed': None, 'https_status': False, 'https_speed': None, 'hidden_id': None, 'vpn': False}
+2023-03-07 23:04:27 [scrapy.core.scraper] WARNING: Dropped: 
+{'ip': '45.8.104.216', 'port': '80', 'http_status': False, 'http_speed': None, 'https_status': False, 'https_speed': None, 'hidden_id': None, 'vpn': False}
+2023-03-07 23:04:27 [asyncio] ERROR: Unclosed connection
+client_connection: Connection<ConnectionKey(host='httpbin.org', port=80, is_ssl=False, ssl=None, proxy=URL('http://45.8.104.216:80'), proxy_auth=None, proxy_headers_hash=None)>
+2023-03-07 23:04:30 [scrapy.core.scraper] WARNING: Dropped: 
+{'ip': '45.8.105.126', 'port': '80', 'http_status': False, 'http_speed': None, 'https_status': False, 'https_speed': None, 'hidden_id': None, 'vpn': False}
+2023-03-07 23:04:35 [scrapy.core.scraper] WARNING: Dropped: 
+{'ip': '49.88.158.127', 'port': '8089', 'http_status': False, 'http_speed': None, 'https_status': False, 'https_speed': None, 'hidden_id': None, 'vpn': False}
+2023-03-07 23:04:35 [asyncio] ERROR: Unclosed connection
+client_connection: Connection<ConnectionKey(host='httpbin.org', port=80, is_ssl=False, ssl=None, proxy=URL('http://45.8.105.126:80'), proxy_auth=None, proxy_headers_hash=None)>
+2023-03-07 23:04:41 [scrapy.core.scraper] WARNING: Dropped: 
+{'ip': '36.228.213.186', 'port': '80', 'http_status': False, 'http_speed': None, 'https_status': False, 'https_speed': None, 'hidden_id': None, 'vpn': False}
+2023-03-07 23:04:43 [scrapy.core.scraper] WARNING: Dropped: 
+{'ip': '222.190.208.166', 'port': '8089', 'http_status': False, 'http_speed': None, 'https_status': False, 'https_speed': None, 'hidden_id': None, 'vpn': False}
+2023-03-07 23:04:49 [scrapy.core.scraper] WARNING: Dropped: 
+{'ip': '222.190.208.222', 'port': '8089', 'http_status': False, 'http_speed': None, 'https_status': False, 'https_speed': None, 'hidden_id': None, 'vpn': False}
+2023-03-07 23:04:49 [scrapy.extensions.logstats] INFO: Crawled 4 pages (at 1 pages/min), scraped 0 items (at 0 items/min)
+2023-03-07 23:04:54 [scrapy.core.scraper] WARNING: Dropped: 
+{'ip': '27.157.228.34', 'port': '8089', 'http_status': False, 'http_speed': None, 'https_status': False, 'https_speed': None, 'hidden_id': None, 'vpn': False}
+2023-03-07 23:04:59 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ip3366.net/?stype=1&page=4>
+{'ip': '222.190.173.152', 'port': '8089', 'http_status': True, 'http_speed': 0.75, 'https_status': False, 'https_speed': None, 'hidden_id': None, 'vpn': False, 'country_id': 1, 'city': '中国泰州市', 'datetime': datetime.datetime(2023, 3, 7, 23, 4, 59, 154134)}
+2023-03-07 23:04:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ip3366.net/?stype=1&page=5> (referer: http://www.ip3366.net/?stype=1&page=4)
+2023-03-07 23:04:59 [asyncio] ERROR: Unclosed connection
+client_connection: Connection<ConnectionKey(host='www.chinaz.com', port=443, is_ssl=True, ssl=None, proxy=URL('http://222.190.173.152:8089'), proxy_auth=None, proxy_headers_hash=-7240704704387033211)>
+2023-03-07 23:05:01 [scrapy.core.scraper] WARNING: Dropped: 
+{'ip': '222.190.215.110', 'port': '8089', 'http_status': False, 'http_speed': None, 'https_status': False, 'https_speed': None, 'hidden_id': None, 'vpn': False}
+2023-03-07 23:05:03 [scrapy.core.scraper] WARNING: Dropped: 
+{'ip': '27.157.230.75', 'port': '8089', 'http_status': False, 'http_speed': None, 'https_status': False, 'https_speed': None, 'hidden_id': None, 'vpn': False}
+2023-03-07 23:05:09 [scrapy.core.scraper] WARNING: Dropped: 
+{'ip': '27.157.228.11', 'port': '8089', 'http_status': False, 'http_speed': None, 'https_status': False, 'https_speed': None, 'hidden_id': None, 'vpn': False}
+2023-03-07 23:05:11 [scrapy.core.scraper] WARNING: Dropped: 
+{'ip': '47.113.219.226', 'port': '9091', 'http_status': False, 'http_speed': None, 'https_status': False, 'https_speed': None, 'hidden_id': None, 'vpn': False}
+2023-03-07 23:05:17 [scrapy.core.scraper] WARNING: Dropped: 
+{'ip': '36.6.158.89', 'port': '8089', 'http_status': False, 'http_speed': None, 'https_status': False, 'https_speed': None, 'hidden_id': None, 'vpn': False}
+2023-03-07 23:05:23 [scrapy.core.scraper] WARNING: Dropped: 
+{'ip': '200.110.104.13', 'port': '999', 'http_status': False, 'http_speed': None, 'https_status': False, 'https_speed': None, 'hidden_id': None, 'vpn': False}
+2023-03-07 23:05:29 [scrapy.core.scraper] WARNING: Dropped: 
+{'ip': '39.107.120.65', 'port': '6666', 'http_status': False, 'http_speed': None, 'https_status': False, 'https_speed': None, 'hidden_id': None, 'vpn': False}
+2023-03-07 23:05:31 [scrapy.core.scraper] WARNING: Dropped: 
+{'ip': '47.92.242.45', 'port': '8999', 'http_status': False, 'http_speed': None, 'https_status': False, 'https_speed': None, 'hidden_id': None, 'vpn': False}
+2023-03-07 23:05:37 [scrapy.core.scraper] WARNING: Dropped: 
+{'ip': '222.190.173.43', 'port': '8089', 'http_status': False, 'http_speed': None, 'https_status': False, 'https_speed': None, 'hidden_id': None, 'vpn': False}
+2023-03-07 23:05:42 [scrapy.core.scraper] WARNING: Dropped: 
+{'ip': '43.251.119.253', 'port': '45787', 'http_status': False, 'http_speed': None, 'https_status': False, 'https_speed': None, 'hidden_id': None, 'vpn': False}
+2023-03-07 23:05:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ip3366.net/?stype=1&page=6> (referer: http://www.ip3366.net/?stype=1&page=5)
+2023-03-07 23:05:48 [scrapy.core.scraper] WARNING: Dropped: 
+{'ip': '43.251.118.100', 'port': '45787', 'http_status': False, 'http_speed': None, 'https_status': False, 'https_speed': None, 'hidden_id': None, 'vpn': False}
+2023-03-07 23:05:48 [scrapy.extensions.logstats] INFO: Crawled 6 pages (at 2 pages/min), scraped 1 items (at 1 items/min)
+2023-03-07 23:05:50 [scrapy.core.scraper] WARNING: Dropped: 
+{'ip': '8.130.34.44', 'port': '1234', 'http_status': False, 'http_speed': None, 'https_status': False, 'https_speed': None, 'hidden_id': None, 'vpn': False}
+2023-03-07 23:05:52 [scrapy.core.scraper] WARNING: Dropped: 
+{'ip': '27.192.170.38', 'port': '9000', 'http_status': False, 'http_speed': None, 'https_status': False, 'https_speed': None, 'hidden_id': None, 'vpn': False}
+2023-03-07 23:05:58 [scrapy.core.scraper] WARNING: Dropped: 
+{'ip': '222.130.95.149', 'port': '8888', 'http_status': False, 'http_speed': None, 'https_status': False, 'https_speed': None, 'hidden_id': None, 'vpn': False}
+2023-03-07 23:06:04 [scrapy.core.scraper] WARNING: Dropped: 
+{'ip': '94.102.228.118', 'port': '32650', 'http_status': False, 'http_speed': None, 'https_status': False, 'https_speed': None, 'hidden_id': None, 'vpn': False}
+2023-03-07 23:06:09 [scrapy.core.scraper] WARNING: Dropped: 
+{'ip': '94.102.235.131', 'port': '32650', 'http_status': False, 'http_speed': None, 'https_status': False, 'https_speed': None, 'hidden_id': None, 'vpn': False}
+2023-03-07 23:06:15 [scrapy.core.scraper] WARNING: Dropped: 
+{'ip': '27.191.60.250', 'port': '9128', 'http_status': False, 'http_speed': None, 'https_status': False, 'https_speed': None, 'hidden_id': None, 'vpn': False}
+2023-03-07 23:06:21 [scrapy.core.scraper] WARNING: Dropped: 
+{'ip': '45.8.144.44', 'port': '3128', 'http_status': False, 'http_speed': None, 'https_status': False, 'https_speed': None, 'hidden_id': None, 'vpn': False}
+2023-03-07 23:06:27 [scrapy.core.scraper] WARNING: Dropped: 
+{'ip': '27.157.230.79', 'port': '8089', 'http_status': False, 'http_speed': None, 'https_status': False, 'https_speed': None, 'hidden_id': None, 'vpn': False}
+2023-03-07 23:06:29 [scrapy.core.scraper] WARNING: Dropped: 
+{'ip': '47.92.247.250', 'port': '10000', 'http_status': False, 'http_speed': None, 'https_status': False, 'https_speed': None, 'hidden_id': None, 'vpn': False}
+2023-03-07 23:06:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ip3366.net/?stype=1&page=7> (referer: http://www.ip3366.net/?stype=1&page=6)
+2023-03-07 23:06:29 [scrapy.core.scraper] WARNING: Dropped: 
+{'ip': '47.99.57.148', 'port': '8080', 'http_status': False, 'http_speed': None, 'https_status': False, 'https_speed': None, 'hidden_id': None, 'vpn': False}
+2023-03-07 23:06:29 [asyncio] ERROR: Unclosed connection
+client_connection: Connection<ConnectionKey(host='httpbin.org', port=80, is_ssl=False, ssl=None, proxy=URL('http://47.99.57.148:8080'), proxy_auth=None, proxy_headers_hash=None)>
+2023-03-07 23:06:35 [scrapy.core.scraper] WARNING: Dropped: 
+{'ip': '202.171.254.146', 'port': '80', 'http_status': False, 'http_speed': None, 'https_status': False, 'https_speed': None, 'hidden_id': None, 'vpn': False}
+2023-03-07 23:06:36 [scrapy.core.scraper] WARNING: Dropped: 
+{'ip': '45.8.107.186', 'port': '80', 'http_status': False, 'http_speed': None, 'https_status': False, 'https_speed': None, 'hidden_id': None, 'vpn': False}
+2023-03-07 23:06:36 [asyncio] ERROR: Unclosed connection
+client_connection: Connection<ConnectionKey(host='httpbin.org', port=80, is_ssl=False, ssl=None, proxy=URL('http://45.8.107.186:80'), proxy_auth=None, proxy_headers_hash=None)>
+2023-03-07 23:06:42 [scrapy.core.scraper] WARNING: Dropped: 
+{'ip': '202.171.252.152', 'port': '80', 'http_status': False, 'http_speed': None, 'https_status': False, 'https_speed': None, 'hidden_id': None, 'vpn': False}
+2023-03-07 23:06:45 [scrapy.extensions.logstats] INFO: Crawled 7 pages (at 1 pages/min), scraped 1 items (at 0 items/min)
+2023-03-07 23:06:47 [scrapy.core.scraper] WARNING: Dropped: 
+{'ip': '27.208.141.128', 'port': '8060', 'http_status': False, 'http_speed': None, 'https_status': False, 'https_speed': None, 'hidden_id': None, 'vpn': False}
+2023-03-07 23:06:51 [scrapy.core.scraper] WARNING: Dropped: 
+{'ip': '202.171.254.238', 'port': '80', 'http_status': False, 'http_speed': None, 'https_status': False, 'https_speed': None, 'hidden_id': None, 'vpn': False}
+2023-03-07 23:06:54 [scrapy.core.scraper] WARNING: Dropped: 
+{'ip': '202.171.252.224', 'port': '80', 'http_status': False, 'http_speed': None, 'https_status': False, 'https_speed': None, 'hidden_id': None, 'vpn': False}
+2023-03-07 23:06:55 [scrapy.core.scraper] WARNING: Dropped: 
+{'ip': '202.171.252.182', 'port': '80', 'http_status': False, 'http_speed': None, 'https_status': False, 'https_speed': None, 'hidden_id': None, 'vpn': False}
+2023-03-07 23:06:56 [scrapy.core.scraper] WARNING: Dropped: 
+{'ip': '202.171.252.241', 'port': '80', 'http_status': False, 'http_speed': None, 'https_status': False, 'https_speed': None, 'hidden_id': None, 'vpn': False}
+2023-03-07 23:06:59 [scrapy.core.scraper] WARNING: Dropped: 
+{'ip': '202.171.254.226', 'port': '80', 'http_status': False, 'http_speed': None, 'https_status': False, 'https_speed': None, 'hidden_id': None, 'vpn': False}
+2023-03-07 23:07:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ip3366.net/?stype=1&page=8> (referer: http://www.ip3366.net/?stype=1&page=7)
+2023-03-07 23:07:06 [scrapy.core.scraper] WARNING: Dropped: 
+{'ip': '202.171.252.149', 'port': '80', 'http_status': False, 'http_speed': None, 'https_status': False, 'https_speed': None, 'hidden_id': None, 'vpn': False}
+2023-03-07 23:07:06 [scrapy.core.scraper] WARNING: Dropped: 
+{'ip': '42.63.65.11', 'port': '80', 'http_status': False, 'http_speed': None, 'https_status': False, 'https_speed': None, 'hidden_id': None, 'vpn': False}
+2023-03-07 23:07:12 [scrapy.core.scraper] WARNING: Dropped: 
+{'ip': '180.126.196.246', 'port': '9002', 'http_status': False, 'http_speed': None, 'https_status': False, 'https_speed': None, 'hidden_id': None, 'vpn': False}
+2023-03-07 23:07:12 [scrapy.core.scraper] WARNING: Dropped: 
+{'ip': '39.173.102.18', 'port': '80', 'http_status': False, 'http_speed': None, 'https_status': False, 'https_speed': None, 'hidden_id': None, 'vpn': False}
+2023-03-07 23:07:18 [scrapy.core.scraper] WARNING: Dropped: 
+{'ip': '175.178.6.6', 'port': '8118', 'http_status': False, 'http_speed': None, 'https_status': False, 'https_speed': None, 'hidden_id': None, 'vpn': False}
+2023-03-07 23:07:24 [scrapy.core.scraper] WARNING: Dropped: 
+{'ip': '202.171.254.216', 'port': '80', 'http_status': False, 'http_speed': None, 'https_status': False, 'https_speed': None, 'hidden_id': None, 'vpn': False}
+2023-03-07 23:07:30 [scrapy.core.scraper] WARNING: Dropped: 
+{'ip': '202.171.254.191', 'port': '80', 'http_status': False, 'http_speed': None, 'https_status': False, 'https_speed': None, 'hidden_id': None, 'vpn': False}
+2023-03-07 23:07:31 [scrapy.core.scraper] WARNING: Dropped: 
+{'ip': '47.243.187.3', 'port': '2020', 'http_status': False, 'http_speed': None, 'https_status': False, 'https_speed': None, 'hidden_id': None, 'vpn': False}
+2023-03-07 23:07:33 [scrapy.core.scraper] WARNING: Dropped: 
+{'ip': '175.178.11.181', 'port': '2080', 'http_status': False, 'http_speed': None, 'https_status': False, 'https_speed': None, 'hidden_id': None, 'vpn': False}
+2023-03-07 23:07:37 [scrapy.core.scraper] WARNING: Dropped: 
+{'ip': '202.171.252.245', 'port': '80', 'http_status': False, 'http_speed': None, 'https_status': False, 'https_speed': None, 'hidden_id': None, 'vpn': False}
+2023-03-07 23:07:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ip3366.net/?stype=1&page=9> (referer: http://www.ip3366.net/?stype=1&page=8)
+2023-03-07 23:07:37 [scrapy.core.scraper] WARNING: Dropped: 
+{'ip': '39.175.89.211', 'port': '30001', 'http_status': False, 'http_speed': None, 'https_status': False, 'https_speed': None, 'hidden_id': None, 'vpn': False}
+2023-03-07 23:07:37 [scrapy.core.scraper] WARNING: Dropped: 
+{'ip': '183.232.186.164', 'port': '80', 'http_status': False, 'http_speed': None, 'https_status': False, 'https_speed': None, 'hidden_id': None, 'vpn': False}
+2023-03-07 23:07:40 [scrapy.core.scraper] WARNING: Dropped: 
+{'ip': '47.87.205.83', 'port': '8000', 'http_status': False, 'http_speed': None, 'https_status': False, 'https_speed': None, 'hidden_id': None, 'vpn': False}
+2023-03-07 23:07:40 [scrapy.core.scraper] WARNING: Dropped: 
+{'ip': '47.100.201.85', 'port': '80', 'http_status': False, 'http_speed': None, 'https_status': False, 'https_speed': None, 'hidden_id': None, 'vpn': False}
+2023-03-07 23:07:45 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ip3366.net/?stype=1&page=9>
+{'ip': '47.116.78.190', 'port': '7890', 'http_status': True, 'http_speed': 0.65, 'https_status': False, 'https_speed': None, 'hidden_id': None, 'vpn': False, 'country_id': 1, 'city': '中国上海', 'datetime': datetime.datetime(2023, 3, 7, 23, 7, 45, 331891)}
+2023-03-07 23:07:45 [asyncio] ERROR: Unclosed connection
+client_connection: Connection<ConnectionKey(host='www.chinaz.com', port=443, is_ssl=True, ssl=None, proxy=URL('http://47.116.78.190:7890'), proxy_auth=None, proxy_headers_hash=-7240704704387033211)>
+2023-03-07 23:07:45 [scrapy.extensions.logstats] INFO: Crawled 9 pages (at 2 pages/min), scraped 2 items (at 1 items/min)
+2023-03-07 23:07:51 [scrapy.core.scraper] WARNING: Dropped: 
+{'ip': '222.129.141.49', 'port': '9000', 'http_status': False, 'http_speed': None, 'https_status': False, 'https_speed': None, 'hidden_id': None, 'vpn': False}
+2023-03-07 23:07:57 [scrapy.core.scraper] WARNING: Dropped: 
+{'ip': '175.178.152.139', 'port': '2080', 'http_status': False, 'http_speed': None, 'https_status': False, 'https_speed': None, 'hidden_id': None, 'vpn': False}
+2023-03-07 23:08:03 [scrapy.core.scraper] WARNING: Dropped: 
+{'ip': '47.100.6.39', 'port': '3128', 'http_status': False, 'http_speed': None, 'https_status': False, 'https_speed': None, 'hidden_id': None, 'vpn': False}
+2023-03-07 23:08:05 [scrapy.core.scraper] WARNING: Dropped: 
+{'ip': '183.238.50.225', 'port': '80', 'http_status': False, 'http_speed': None, 'https_status': False, 'https_speed': None, 'hidden_id': None, 'vpn': False}
+2023-03-07 23:08:07 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ip3366.net/?stype=1&page=9>
+{'ip': '47.109.46.223', 'port': '5678', 'http_status': True, 'http_speed': 2.08, 'https_status': False, 'https_speed': None, 'hidden_id': None, 'vpn': False, 'country_id': 1, 'city': '中国成都', 'datetime': datetime.datetime(2023, 3, 7, 23, 8, 7, 439475)}
+2023-03-07 23:08:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ip3366.net/?stype=1&page=10> (referer: http://www.ip3366.net/?stype=1&page=9)
+2023-03-07 23:08:08 [asyncio] ERROR: Unclosed connection
+client_connection: Connection<ConnectionKey(host='www.chinaz.com', port=80, is_ssl=False, ssl=None, proxy=URL('http://47.109.46.223:5678'), proxy_auth=None, proxy_headers_hash=None)>
+2023-03-07 23:08:13 [scrapy.core.scraper] WARNING: Dropped: 
+{'ip': '43.251.118.153', 'port': '45787', 'http_status': False, 'http_speed': None, 'https_status': False, 'https_speed': None, 'hidden_id': None, 'vpn': False}
+2023-03-07 23:08:18 [scrapy.core.scraper] WARNING: Dropped: 
+{'ip': '43.251.119.163', 'port': '45787', 'http_status': False, 'http_speed': None, 'https_status': False, 'https_speed': None, 'hidden_id': None, 'vpn': False}
+2023-03-07 23:08:24 [scrapy.core.scraper] WARNING: Dropped: 
+{'ip': '8.135.48.42', 'port': '8080', 'http_status': False, 'http_speed': None, 'https_status': False, 'https_speed': None, 'hidden_id': None, 'vpn': False}
+2023-03-07 23:08:30 [scrapy.core.scraper] WARNING: Dropped: 
+{'ip': '183.172.201.213', 'port': '10080', 'http_status': False, 'http_speed': None, 'https_status': False, 'https_speed': None, 'hidden_id': None, 'vpn': False}
+2023-03-07 23:08:35 [scrapy.core.scraper] WARNING: Dropped: 
+{'ip': '27.192.171.112', 'port': '9000', 'http_status': False, 'http_speed': None, 'https_status': False, 'https_speed': None, 'hidden_id': None, 'vpn': False}
+2023-03-07 23:08:35 [scrapy.core.scraper] WARNING: Dropped: 
+{'ip': '183.232.186.203', 'port': '80', 'http_status': False, 'http_speed': None, 'https_status': False, 'https_speed': None, 'hidden_id': None, 'vpn': False}
+2023-03-07 23:08:41 [scrapy.core.scraper] WARNING: Dropped: 
+{'ip': '49.88.158.130', 'port': '8089', 'http_status': False, 'http_speed': None, 'https_status': False, 'https_speed': None, 'hidden_id': None, 'vpn': False}
+2023-03-07 23:08:45 [scrapy.extensions.logstats] INFO: Crawled 10 pages (at 1 pages/min), scraped 3 items (at 1 items/min)
+2023-03-07 23:08:47 [scrapy.core.scraper] WARNING: Dropped: 
+{'ip': '222.190.215.63', 'port': '8089', 'http_status': False, 'http_speed': None, 'https_status': False, 'https_speed': None, 'hidden_id': None, 'vpn': False}
+2023-03-07 23:08:47 [scrapy.core.scraper] WARNING: Dropped: 
+{'ip': '221.130.193.68', 'port': '80', 'http_status': False, 'http_speed': None, 'https_status': False, 'https_speed': None, 'hidden_id': None, 'vpn': False}
+2023-03-07 23:08:47 [scrapy.core.scraper] WARNING: Dropped: 
+{'ip': '60.188.5.240', 'port': '80', 'http_status': False, 'http_speed': None, 'https_status': False, 'https_speed': None, 'hidden_id': None, 'vpn': False}
+2023-03-07 23:08:47 [scrapy.core.engine] INFO: Closing spider (finished)
+2023-03-07 23:08:47 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 3353,
+ 'downloader/request_count': 10,
+ 'downloader/request_method_count/GET': 10,
+ 'downloader/response_bytes': 65113,
+ 'downloader/response_count': 10,
+ 'downloader/response_status_count/200': 10,
+ 'elapsed_time_seconds': 422.240877,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2023, 3, 7, 15, 8, 47, 886294),
+ 'httpcompression/response_bytes': 153978,
+ 'httpcompression/response_count': 10,
+ 'item_dropped_count': 97,
+ 'item_dropped_reasons_count/DropItem': 97,
+ 'item_scraped_count': 3,
+ 'log_count/DEBUG': 16,
+ 'log_count/ERROR': 8,
+ 'log_count/INFO': 17,
+ 'log_count/WARNING': 97,
+ 'request_depth_max': 9,
+ 'response_received_count': 10,
+ 'scheduler/dequeued': 10,
+ 'scheduler/dequeued/memory': 10,
+ 'scheduler/enqueued': 10,
+ 'scheduler/enqueued/memory': 10,
+ 'start_time': datetime.datetime(2023, 3, 7, 15, 1, 45, 645417)}
+2023-03-07 23:08:47 [scrapy.core.engine] INFO: Spider closed (finished)

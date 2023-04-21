@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Personal Website</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='/css/global.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='/css/index.css') }}">
+</head>
+<body>
+    <header>
+        <div class="banner">
+            <h1><a href="/">闲散小站</a></h1>
+        </div>
+        <section class="home">
+            <div class="profile">
+                <img src="{{ url_for('static', filename='/img/profile.jpg') }}" alt="My Profile Picture">
+                <div class="contact-info">
+                    <h2>闲人散</h2>
+                    <p>Email: 912190299@qq.com</p>
+                    <p>Phone: 13036208553</p>
+                </div>
+            </div>
+        </section>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/projects">Projects</a></li>
+                <li><a href="/knowledge">Knowledge</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+    </main>
+</body>
+</html>

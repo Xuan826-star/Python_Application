@@ -1,0 +1,15 @@
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+.profile img {
+    width: 150px;
+    margin-right: 20px;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

@@ -19,13 +19,24 @@ class YinghuaPipeline:
     def process_item(self, item, spider):
         if type(item)==TimeChartItem:
             ptt_findNumber=re.compile('(\d+)')
-            number=re.findall(ptt_findNumber,item['status'])[0]
-            if number:
-                number=int(number)
+            number_res=re.findall(ptt_findNumber,item['status'])
+            if len(number_res)!=0:
+                number=number_res[0] 
                 new_status=f'更新至第{number}集'
                 item['status']=new_status
         
         elif type(item)==AnimaInfos:
+            
+            ptt_findStatus=re.compile('更新')
+            updating=False if re.findall(ptt_findStatus,item['status'])==[] else True
+            if updating:
+                ptt_findNumber=re.compile('(\d+)')
+                number_res=re.findall(ptt_findNumber,item['status'])
+                if len(number_res)!=0:
+                    number=number_res[0] 
+                    new_status=f'更新至第{number}集'
+                    item['status']=new_status
+
             item['year']=int(item['year'])
             NoneList=['内详','未知']
             if len(item['vas'])==0 or item['vas'][0] in NoneList:
@@ -37,7 +48,7 @@ class YinghuaPipeline:
             # if item['resolution']:
             #     item['resolution']=item['resolution'].split('x')
             if not item['label'].isprintable():
-                item['label']=''.join(x for x in item['label'] if x.isprintable())
+                item['label']=','.join(x for x in item['label'] if x.isprintable())
         
         #将list转换成str
         for key in list(item.keys()):

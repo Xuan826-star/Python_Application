@@ -99,6 +99,11 @@ class YinghuaSpider(scrapy.Spider):
         resolution=resolution[0] if len(resolution) else None
         url_obj=urlparse(response.url)
         domain=url_obj.netloc
+        pth=url_obj.path
+        #某些源(cdn...)是相对href，特殊处理
+        if href_m3u8[0]!='/':
+            pth=pth.replace('index.m3u8','')
+            href_m3u8=pth+href_m3u8
         meta=response.meta
         Itm=Source(title=meta['title'],lineindex=meta['lineIndex'],domain=domain,
                     label=meta['label'],href=href_m3u8,resolution=resolution)

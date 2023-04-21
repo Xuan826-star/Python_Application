@@ -102,6 +102,42 @@ class AcgDownloaderMiddleware:
     def spider_opened(self, spider):
         spider.logger.info('Spider opened: %s' % spider.name)
 
+class IgnoreRepeatMiddleware(object):
+
+    def __init__(self, host, database, user, password, port, table):
+        self.host = host
+        self.database = database
+        self.user = user
+        self.password = password
+        self.port = port
+        self.table=table
+    
+    @classmethod
+    def from_crawler(cls, crawler):
+        return cls(
+            host=crawler.settings.get('MYSQL_HOST'),
+            database=crawler.settings.get('MYSQL_DATABASE'),
+            user=crawler.settings.get('MYSQL_USER'),
+            password=crawler.settings.get('MYSQL_PASSWORD'),
+            port=crawler.settings.get('MYSQL_PORT'),
+            table=crawler.settings.get('MYSQL_TABLE'),
+        )
+    
+    def process_request(self, request, spider):
+        # Called for each request that goes through the downloader
+        # middleware.
+        update=request.meta.get('update',True)
+        if update:
+            return None
+        
+        # Must either:
+        # - return None: continue processing this request
+        # - or return a Response object
+        # - or return a Request object
+        # - or raise IgnoreRequest: process_exception() methods of
+        #   installed downloader middleware will be called
+        return None
+
 class DelayedRequestsMiddleware(object):
     def process_request(self, request, spider):
         delay_s = request.meta.get('delay_request_by', None)
